@@ -1,11 +1,13 @@
-use egg_mode::tweet::user_timeline;
 use crate::tweet_cache::TweetCache;
+use egg_mode::tweet::user_timeline;
+use egg_mode::tweet::{Timeline, Tweet};
 use std::fs::File;
 use std::io::BufReader;
 
 use egg_mode::Token;
 use serde::Deserialize;
 
+mod parser;
 mod tweet_cache;
 
 #[derive(Deserialize)]
@@ -32,23 +34,36 @@ fn load_twitter_creds() -> Result<Token> {
     })
 }
 
+async fn load_tweets_from_timeline(
+    cache: &mut TweetCache,
+    timeline_: Timeline,
+    back_to: Option<u64>,
+) -> Result<()> {
+    let mut timeline = timeline_;
+    loop {
+        println!("Fetching tweets {:?} to {:?}", timeline.min_id, back_to);
+        let (inner_timeline, feed_) = timeline.older(back_to).await?;
+        let feed: &Vec<Tweet> = &*feed_;
+        if feed.is_empty() {
+            return Ok(());
+        }
+        cache.add_all_tweets(feed);
+        cache.write()?;
+        timeline = inner_timeline;
+    }
+}
+
 async fn load_tweets(token: &Token, cache: &mut TweetCache) -> Result<()> {
     let timeline = user_timeline("metlinkwgtn", false, false, token).with_page_size(200);
 
-    if cache.tweets.is_empty() {
-        let (timeline, feed) = timeline.start().await.unwrap();
-        for tweet in &*feed {
-            println!("{:#?}", tweet);
-            cache.add_tweet(tweet);
-        }
-        cache.write()?;
-    } 
+    load_tweets_from_timeline(
+        cache,
+        timeline,
+        cache.tweets.iter().map(|tweet| tweet.id).max(),
+    )
+    .await?;
 
-    
-
-
-
-
+    cache.write()?;
     Ok(())
 }
 
@@ -56,6 +71,19 @@ async fn load_tweets(token: &Token, cache: &mut TweetCache) -> Result<()> {
 pub async fn main() -> Result<()> {
     let creds = load_twitter_creds()?;
     let mut cache = TweetCache::read()?;
- load_tweets(&creds, &mut cache).await?;
+
+    println!("Has recent data: {}", cache.has_recent_data());
+
+    if !cache.has_recent_data() {
+        load_tweets(&creds, &mut cache).await?;
+    }
+
+    for tweet in cache.tweets {
+        println!("{:?}", tweet);
+        let cancellations = parser::parse_tweet(&tweet);
+        assert!(!cancellations.is_empty());
+        println!("  {:?}", cancellations);
+    }
+
     Ok(())
 }
