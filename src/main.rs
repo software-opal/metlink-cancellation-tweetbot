@@ -81,8 +81,9 @@ pub async fn main() -> Result<()> {
     for tweet in cache.tweets {
         println!("{:?}", tweet);
         let cancellations = parser::parse_tweet(&tweet);
-        assert!(!cancellations.is_empty());
-        println!("  {:?}", cancellations);
+        if cancellations.is_empty() {
+            println!(" {:?}: {:?}", tweet, cancellations);
+        }
     }
 
     Ok(())
