@@ -78,13 +78,15 @@ pub async fn main() -> Result<()> {
         load_tweets(&creds, &mut cache).await?;
     }
 
-    for tweet in cache.tweets {
-        println!("{:?}", tweet);
-        let cancellations = parser::parse_tweet(&tweet);
-        if cancellations.is_empty() {
-            println!(" {:?}: {:?}", tweet, cancellations);
-        }
-    }
+    let cancellations: Vec<_> = cache
+        .tweets
+        .iter()
+        .flat_map(|tweet| {
+            println!("{:?}", &tweet);
+            parser::parse_tweet(tweet)
+        })
+        .collect();
+    serde_json::to_writer_pretty(File::create("twitter-cancellations.json")?, &cancellations);
 
     Ok(())
 }

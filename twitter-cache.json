@@ -1409,6 +1409,261 @@
       "id": 1357206821098844164,
       "created_at": "2021-02-04T05:58:16Z",
       "text": "Bus 7: Bus 7: 8:30pm Wellington Station to Kingston is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1357232447847473154,
+      "created_at": "2021-02-04T07:40:06Z",
+      "text": "Bus 83: Bus 83: 8:30pm Eastbourne to Courtenay Place is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1357235464005066759,
+      "created_at": "2021-02-04T07:52:05Z",
+      "text": "Bus 12: Bus 12: 10:40pm Kilbirnie to Strathmore Park terminus is cancelled. Check RTI for next service."
+    },
+    {
+      "id": 1357253586724352001,
+      "created_at": "2021-02-04T09:04:06Z",
+      "text": "Bus 14: Bus 14: 11:30pm Kilbirnie to Wilton has been cancelled."
+    },
+    {
+      "id": 1357381929675366400,
+      "created_at": "2021-02-04T17:34:05Z",
+      "text": "Bus 24: Bus 24: 7:20am Johnsonville to Kilbirnie has been cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357381935287259139,
+      "created_at": "2021-02-04T17:34:06Z",
+      "text": "Bus 25: Bus 25: 6:50am Khandallah to Highbury has been cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357383441394749440,
+      "created_at": "2021-02-04T17:40:06Z",
+      "text": "Bus 24: Bus 24: 7:20am Johnsonville to Kilbirnie that was previously cancelled will now run."
+    },
+    {
+      "id": 1357383447023525889,
+      "created_at": "2021-02-04T17:40:07Z",
+      "text": "Bus 23: Bus 23: 8:05am Wellington Zoo to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357383452291596294,
+      "created_at": "2021-02-04T17:40:08Z",
+      "text": "Bus 19e: Bus 19e: 8:02am Johnsonville to Wellington is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357383458775945217,
+      "created_at": "2021-02-04T17:40:10Z",
+      "text": "Bus 17: Bus 17: 7:55am Kowhai Park to Wellington Station has been cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357387966893617157,
+      "created_at": "2021-02-04T17:58:05Z",
+      "text": "Bus 32x: Bus 32x: 7:51am Houghton Bay to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357389477006569473,
+      "created_at": "2021-02-04T18:04:05Z",
+      "text": "Bus 29: Bus 29: 7:16am Island Bay to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357390993142632449,
+      "created_at": "2021-02-04T18:10:06Z",
+      "text": "Bus 14: Bus 14: 7:53am Kilbirnie to Wilton is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357390999677411328,
+      "created_at": "2021-02-04T18:10:08Z",
+      "text": "Bus 22: Bus 22: 7:57am Johnsonville to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357391004236533760,
+      "created_at": "2021-02-04T18:10:09Z",
+      "text": "Bus 27: Bus 27: 8:18am Kingston to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357392511338041344,
+      "created_at": "2021-02-04T18:16:08Z",
+      "text": "Bus 3: Bus 3: 7:45am Wellington Station to Lyall Bay is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357392517130452993,
+      "created_at": "2021-02-04T18:16:09Z",
+      "text": "Bus 18e: Bus 18e: 7:25am Miramar to Karori is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357398547990151168,
+      "created_at": "2021-02-04T18:40:07Z",
+      "text": "Bus 24: Bus 24: 7:55am Miramar to Johnsonville is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357398553522413569,
+      "created_at": "2021-02-04T18:40:09Z",
+      "text": "Bus 23: Bus 23: 7:45am Wellington Zoo to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357400054403788801,
+      "created_at": "2021-02-04T18:46:06Z",
+      "text": "Bus 36: Bus 36: 8:00am Lyall Bay to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357400064222633984,
+      "created_at": "2021-02-04T18:46:09Z",
+      "text": "Bus 1: Bus 1: 7:52am Island Bay to Churton Park is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357403077913972736,
+      "created_at": "2021-02-04T18:58:07Z",
+      "text": "Bus 3: Bus 3: 8:10am Lyall Bay to Wellington Station is cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357406099226259456,
+      "created_at": "2021-02-04T19:10:08Z",
+      "text": "Bus 18e: Bus 18e: 8:15am Karori to Miramar will be part cancelled between Karori to Kilbirnie. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357409112296890368,
+      "created_at": "2021-02-04T19:22:06Z",
+      "text": "Bus 18e: Bus 18e: 7:45am Miramar to Karori has been cancelled. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357409133515841538,
+      "created_at": "2021-02-04T19:22:11Z",
+      "text": "JVL: JVL: The 8.12am WELL to JOHN and the 8.45am JOHN to WELL svc's have been cancelled due to a passenger incident. Alt svc departs JOHN..."
+    },
+    {
+      "id": 1357418177743908865,
+      "created_at": "2021-02-04T19:58:07Z",
+      "text": "Bus 22: Bus 22: 8:31am Johnsonville to Wellington has been cancelled due to an incident. Please check RTI for next available bus."
+    },
+    {
+      "id": 1357490640934719491,
+      "created_at": "2021-02-05T00:46:04Z",
+      "text": "Bus 21: Bus 21: 1:49pm Courtenay Place to Karori Mall is cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357492160854061056,
+      "created_at": "2021-02-05T00:52:06Z",
+      "text": "Bus 21: Bus 21: 2:20pm Karori Mall to Courtenay Place to is cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357505747626598400,
+      "created_at": "2021-02-05T01:46:06Z",
+      "text": "Bus 1: Bus1: 2:45pm Island Bay - McLintock St has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357508768540418048,
+      "created_at": "2021-02-05T01:58:06Z",
+      "text": "Bus 3: Bus 2: 3:00pm Seatoun - Karori has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357510280771633152,
+      "created_at": "2021-02-05T02:04:06Z",
+      "text": "Bus 22: Bus 22: 3:35pm Wellington Stn - Victoria Uni has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357510287788699648,
+      "created_at": "2021-02-05T02:04:08Z",
+      "text": "Bus 3: Bus 3: 3:02pm Wellington Stn - Lyall Bay has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357510294377926657,
+      "created_at": "2021-02-05T02:04:10Z",
+      "text": "Bus 14: Bus 14: 4:47pm Kilbirnie - Wilton has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357510302753902593,
+      "created_at": "2021-02-05T02:04:12Z",
+      "text": "Bus 2: Bus 2: 3:00pm Seatoun - Karori has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357510310119133186,
+      "created_at": "2021-02-05T02:04:13Z",
+      "text": "Bus 2: Bus 2: 3:15pm Karori - Miramar has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357537457537884163,
+      "created_at": "2021-02-05T03:52:06Z",
+      "text": "Bus 21: Bus 21: 6:32pm Karori - Courtenay Place has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357537462336196608,
+      "created_at": "2021-02-05T03:52:07Z",
+      "text": "Bus 33: Bus 33: 5:26 Lambton Central - Karori has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357537470326337537,
+      "created_at": "2021-02-05T03:52:09Z",
+      "text": "Bus 2: Bus 2: 5:57pm Miramar - Karori has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357537476944879618,
+      "created_at": "2021-02-05T03:52:10Z",
+      "text": "Bus 81: Bus 81: 4:55pm Courtenay Place - Eastbourne has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357543490838663171,
+      "created_at": "2021-02-05T04:16:04Z",
+      "text": "Bus 114: Bus 114: 5:02pm Upper Hutt - Trentham has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1357546516655710212,
+      "created_at": "2021-02-05T04:28:06Z",
+      "text": "Bus 114: Bus 114: 5:02pm Upper Hutt - Trentham has been REINSTATED."
+    },
+    {
+      "id": 1357546522481598464,
+      "created_at": "2021-02-05T04:28:07Z",
+      "text": "Bus 21: Bus 21: 6:32pm Karori Mall to Courtenay Place is cancelled. Check RTI for next service."
+    },
+    {
+      "id": 1357558600512589831,
+      "created_at": "2021-02-05T05:16:07Z",
+      "text": "Bus 31x: Bus 31x: 6:10pm Wellington Station to Miramar North is cancelled. Check RTI for next service."
+    },
+    {
+      "id": 1357563128515493891,
+      "created_at": "2021-02-05T05:34:06Z",
+      "text": "Bus 2: Bus 2: 7:22pm Karori to Seatoun Park has been cancelled. Check RTI for next service."
+    },
+    {
+      "id": 1357566147558735872,
+      "created_at": "2021-02-05T05:46:06Z",
+      "text": "Bus 21: Bus 21: 8pm Courtenay Place to Karori Mall has been cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1357579736273227778,
+      "created_at": "2021-02-05T06:40:06Z",
+      "text": "Bus 1: Bus 1: 8:45pm Churton Park to Island Bay is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1357581244779798531,
+      "created_at": "2021-02-05T06:46:06Z",
+      "text": "Bus 22: Bus 22: 9:02pm Mairangi to Wellington Station is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1357600873317208066,
+      "created_at": "2021-02-05T08:04:05Z",
+      "text": "Bus 2: Bus 2: 9:42pm Miramar to Karori is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1357794145658544128,
+      "created_at": "2021-02-05T20:52:05Z",
+      "text": "Bus 3: Bus 3: 9:50am from Tirangi Rd to Wellington Station is cancelled. Check RTI to find next available bus."
+    },
+    {
+      "id": 1357809245660483585,
+      "created_at": "2021-02-05T21:52:05Z",
+      "text": "Bus 3: Bus 3: 10:45am from Wellington Station to Lyall Bay is cancelled. Check RTI to find next available bus."
+    },
+    {
+      "id": 1357825854538043392,
+      "created_at": "2021-02-05T22:58:05Z",
+      "text": "Bus 3: Bus 3: 11:50am from Tirangi Rd to Wellington Station is cancelled. Check RTI to find next available bus."
+    },
+    {
+      "id": 1357840951566233601,
+      "created_at": "2021-02-05T23:58:04Z",
+      "text": "Bus 3: Bus 3: 12:45pm from Wellington Station  to Lyall Bay is cancelled. Check RTI to find next available bus."
     }
   ]
 }
