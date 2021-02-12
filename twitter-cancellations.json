@@ -1,0 +1,3426 @@
+[
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "10:30 am",
+      "tweet_time": "2021-01-24T21:00:06Z",
+      "time": "2021-01-25T10:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "9:35 am",
+      "tweet_time": "2021-01-24T21:00:08Z",
+      "time": "2021-01-25T09:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne",
+      "raw_time": "9:45 am",
+      "tweet_time": "2021-01-24T21:00:11Z",
+      "time": "2021-01-25T09:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar",
+      "destination": "Wellington",
+      "raw_time": "8:10 am",
+      "tweet_time": "2021-01-25T19:17:06Z",
+      "time": "2021-01-26T08:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington Station",
+      "raw_time": "8:15 am",
+      "tweet_time": "2021-01-25T19:17:08Z",
+      "time": "2021-01-26T08:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Stn",
+      "raw_time": "5:23 pm",
+      "tweet_time": "2021-01-27T03:58:05Z",
+      "time": "2021-01-27T17:23:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Stn",
+      "raw_time": "5:23 pm",
+      "tweet_time": "2021-01-27T04:10:07Z",
+      "time": "2021-01-27T17:23:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Strathmore",
+      "destination": "Kilbirnie",
+      "raw_time": "11:15 pm",
+      "tweet_time": "2021-01-27T05:34:06Z",
+      "time": "2021-01-27T23:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "8:30 pm",
+      "tweet_time": "2021-01-27T05:34:08Z",
+      "time": "2021-01-27T20:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne Terminus",
+      "raw_time": "7:05 pm",
+      "tweet_time": "2021-01-27T05:34:10Z",
+      "time": "2021-01-27T19:05:00+13:00"
+    }
+  },
+  {
+    "BusDelayed": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington Station",
+      "delay_minutes": "20",
+      "raw_time": "7:00 pm",
+      "tweet_time": "2021-01-27T06:10:05Z",
+      "time": "2021-01-27T19:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "2:30 pm",
+      "tweet_time": "2021-01-28T01:43:06Z",
+      "time": "2021-01-28T14:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Kilbirnie",
+      "destination": "Strathmore Park",
+      "raw_time": "3:05 pm",
+      "tweet_time": "2021-01-28T01:49:05Z",
+      "time": "2021-01-28T15:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Tirangi Road",
+      "raw_time": "3:30 pm",
+      "tweet_time": "2021-01-28T01:49:06Z",
+      "time": "2021-01-28T15:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "4:00 pm",
+      "tweet_time": "2021-01-28T03:07:07Z",
+      "time": "2021-01-28T16:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "3:57 pm",
+      "tweet_time": "2021-01-28T03:07:09Z",
+      "time": "2021-01-28T15:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Tirangi Road",
+      "raw_time": "5:17 pm",
+      "tweet_time": "2021-01-28T03:19:07Z",
+      "time": "2021-01-28T17:17:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne",
+      "raw_time": "4:35 pm",
+      "tweet_time": "2021-01-28T03:19:09Z",
+      "time": "2021-01-28T16:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "120",
+      "origin": "Stokes Valley",
+      "destination": "Lower Hutt",
+      "raw_time": "5:30 pm",
+      "tweet_time": "2021-01-28T03:19:10Z",
+      "time": "2021-01-28T17:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "150",
+      "origin": "Petone",
+      "destination": "Kelson",
+      "raw_time": "3:55 pm",
+      "tweet_time": "2021-01-28T03:25:06Z",
+      "time": "2021-01-28T15:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "5:15 pm",
+      "tweet_time": "2021-01-28T03:31:13Z",
+      "time": "2021-01-28T17:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "84",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "5:45 pm",
+      "tweet_time": "2021-01-28T03:37:07Z",
+      "time": "2021-01-28T17:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Highbury",
+      "destination": "Khandallah",
+      "raw_time": "5:35 pm",
+      "tweet_time": "2021-01-28T04:43:06Z",
+      "time": "2021-01-28T17:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Tirangi Road",
+      "destination": "Wellington Station",
+      "raw_time": "6:00 pm",
+      "tweet_time": "2021-01-28T04:49:09Z",
+      "time": "2021-01-28T18:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Tirangi Road",
+      "destination": "Wellington Stn",
+      "raw_time": "6:20 pm",
+      "tweet_time": "2021-01-28T04:55:09Z",
+      "time": "2021-01-28T18:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Wellington Station",
+      "destination": "Kingston",
+      "raw_time": "7:13 pm",
+      "tweet_time": "2021-01-28T05:31:07Z",
+      "time": "2021-01-28T19:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Stn",
+      "raw_time": "7:50 pm",
+      "tweet_time": "2021-01-28T05:31:09Z",
+      "time": "2021-01-28T19:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "7:30 pm",
+      "tweet_time": "2021-01-28T05:31:12Z",
+      "time": "2021-01-28T19:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Stn",
+      "destination": "Lyall Bay",
+      "raw_time": "8:55 pm",
+      "tweet_time": "2021-01-28T06:49:06Z",
+      "time": "2021-01-28T20:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Village",
+      "destination": "Karori",
+      "raw_time": "8:23 pm",
+      "tweet_time": "2021-01-28T06:55:06Z",
+      "time": "2021-01-28T20:23:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "9:35 pm",
+      "tweet_time": "2021-01-28T07:07:08Z",
+      "time": "2021-01-28T21:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Village",
+      "destination": "Karori",
+      "raw_time": "10:24 pm",
+      "tweet_time": "2021-01-28T08:07:07Z",
+      "time": "2021-01-28T22:24:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar -Darlington Road",
+      "raw_time": "11:28 pm",
+      "tweet_time": "2021-01-28T08:25:06Z",
+      "time": "2021-01-28T23:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Rongotai",
+      "destination": "Wellington Stn",
+      "raw_time": "2:40 pm",
+      "tweet_time": "2021-01-29T01:30:08Z",
+      "time": "2021-01-29T14:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Karori Mall",
+      "raw_time": "2:49 pm",
+      "tweet_time": "2021-01-29T02:18:07Z",
+      "time": "2021-01-29T14:49:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Victoria University",
+      "raw_time": "3:05 pm",
+      "tweet_time": "2021-01-29T02:18:08Z",
+      "time": "2021-01-29T15:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Victoria Uni",
+      "destination": "Wellington Stn",
+      "raw_time": "4:28 pm",
+      "tweet_time": "2021-01-29T02:54:06Z",
+      "time": "2021-01-29T16:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "30x",
+      "origin": "Wellington Stn",
+      "destination": "Moa Pt",
+      "raw_time": "5:00 pm",
+      "tweet_time": "2021-01-29T03:48:09Z",
+      "time": "2021-01-29T17:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Stn",
+      "destination": "Tirangi Rd",
+      "raw_time": "5:32 pm",
+      "tweet_time": "2021-01-29T03:48:11Z",
+      "time": "2021-01-29T17:32:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12e",
+      "origin": "Wellington Stn",
+      "destination": "Strathmore Prk",
+      "raw_time": "4:52 pm",
+      "tweet_time": "2021-01-29T03:48:12Z",
+      "time": "2021-01-29T16:52:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Courtenay Place",
+      "destination": "Wilton",
+      "raw_time": "5:06 pm",
+      "tweet_time": "2021-01-29T04:12:07Z",
+      "time": "2021-01-29T17:06:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "cancelled_from": "Rongotai",
+      "cancelled_to": "Miramar",
+      "raw_time": "6:15 pm",
+      "tweet_time": "2021-01-29T04:42:08Z",
+      "time": "2021-01-29T18:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Seatoun Park",
+      "raw_time": "9:43 pm",
+      "tweet_time": "2021-01-29T07:24:10Z",
+      "time": "2021-01-29T21:43:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Seatoun Park",
+      "raw_time": "8:15 pm",
+      "tweet_time": "2021-01-29T07:24:12Z",
+      "time": "2021-01-29T20:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Village",
+      "destination": "Karori",
+      "raw_time": "8:23 pm",
+      "tweet_time": "2021-01-29T07:24:14Z",
+      "time": "2021-01-29T20:23:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Village",
+      "destination": "Karori",
+      "raw_time": "10:24 pm",
+      "tweet_time": "2021-01-29T08:00:07Z",
+      "time": "2021-01-29T22:24:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "11:28 pm",
+      "tweet_time": "2021-01-29T08:06:06Z",
+      "time": "2021-01-29T23:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Village",
+      "destination": "Karori",
+      "raw_time": "10:58 pm",
+      "tweet_time": "2021-01-29T08:06:08Z",
+      "time": "2021-01-29T22:58:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "6:25 am",
+      "tweet_time": "2021-01-29T18:16:06Z",
+      "time": "2021-01-30T06:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-01-29T18:22:06Z",
+      "time": "2021-01-30T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Park",
+      "destination": "Karori",
+      "raw_time": "8:30 am",
+      "tweet_time": "2021-01-29T19:34:06Z",
+      "time": "2021-01-30T08:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "8:55 am",
+      "tweet_time": "2021-01-29T19:34:08Z",
+      "time": "2021-01-30T08:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "150",
+      "origin": "Petone",
+      "destination": "Kelson",
+      "raw_time": "4:01 pm",
+      "tweet_time": "2021-01-30T03:16:05Z",
+      "time": "2021-01-30T16:01:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "3:53 pm",
+      "tweet_time": "2021-01-30T03:28:04Z",
+      "time": "2021-01-30T15:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Kilbirnie",
+      "raw_time": "5:00 pm",
+      "tweet_time": "2021-01-30T04:10:05Z",
+      "time": "2021-01-30T17:00:00+13:00"
+    }
+  },
+  {
+    "BusDelayed": {
+      "route": "17",
+      "origin": "Wellington Station",
+      "destination": "Kowhai Park",
+      "delay_minutes": "20",
+      "raw_time": "5:03 pm",
+      "tweet_time": "2021-01-30T04:16:04Z",
+      "time": "2021-01-30T17:03:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Kilbirnie",
+      "raw_time": "6:00 pm",
+      "tweet_time": "2021-01-30T05:22:05Z",
+      "time": "2021-01-30T18:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "8:06 am",
+      "tweet_time": "2021-01-30T19:23:06Z",
+      "time": "2021-01-31T08:06:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Kilbirnie",
+      "destination": "Courtenay Place",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-01-30T19:41:05Z",
+      "time": "2021-01-31T08:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Courtenay Place",
+      "destination": "Kilbirnie",
+      "raw_time": "9:30 am",
+      "tweet_time": "2021-01-30T19:47:06Z",
+      "time": "2021-01-31T09:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Kilbirnie",
+      "destination": "Courtenay Place",
+      "raw_time": "9:05 am",
+      "tweet_time": "2021-01-30T19:47:07Z",
+      "time": "2021-01-31T09:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Courtenay Place",
+      "destination": "Kilbirnie",
+      "raw_time": "8:30 am",
+      "tweet_time": "2021-01-30T19:47:09Z",
+      "time": "2021-01-31T08:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Courtenay Place",
+      "destination": "Kilbirnie",
+      "raw_time": "11:30 am",
+      "tweet_time": "2021-01-30T21:34:06Z",
+      "time": "2021-01-31T11:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Kilbirnie",
+      "destination": "Courtenay Place",
+      "raw_time": "11:05 am",
+      "tweet_time": "2021-01-30T21:34:08Z",
+      "time": "2021-01-31T11:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "20",
+      "origin": "Kilbirnie",
+      "destination": "Courtenay Place",
+      "raw_time": "10:05 am",
+      "tweet_time": "2021-01-30T21:34:09Z",
+      "time": "2021-01-31T10:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "10:10 am",
+      "tweet_time": "2021-01-30T21:40:07Z",
+      "time": "2021-01-31T10:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Stn",
+      "destination": "Rongotai",
+      "raw_time": "10:30 am",
+      "tweet_time": "2021-01-30T21:58:07Z",
+      "time": "2021-01-31T10:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "10:52 am",
+      "tweet_time": "2021-01-30T21:58:09Z",
+      "time": "2021-01-31T10:52:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Strathmore",
+      "destination": "Kilbirnie",
+      "raw_time": "12:48 pm",
+      "tweet_time": "2021-01-30T22:10:06Z",
+      "time": "2021-01-31T12:48:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Kilbirnie",
+      "destination": "Strathmore",
+      "raw_time": "12:30 pm",
+      "tweet_time": "2021-01-30T22:10:07Z",
+      "time": "2021-01-31T12:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "1:20 pm",
+      "tweet_time": "2021-01-30T23:33:07Z",
+      "time": "2021-01-31T13:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Park",
+      "destination": "Karori",
+      "raw_time": "2:35 pm",
+      "tweet_time": "2021-01-31T00:27:05Z",
+      "time": "2021-01-31T14:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun",
+      "destination": "Karori",
+      "raw_time": "2:55 pm",
+      "tweet_time": "2021-01-31T00:51:06Z",
+      "time": "2021-01-31T14:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "2:50 pm",
+      "tweet_time": "2021-01-31T00:57:06Z",
+      "time": "2021-01-31T14:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Mairangi",
+      "destination": "Wellington Stn",
+      "raw_time": "3:02 pm",
+      "tweet_time": "2021-01-31T01:03:05Z",
+      "time": "2021-01-31T15:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Wellington Stn",
+      "destination": "Mairangi",
+      "raw_time": "3:30 pm",
+      "tweet_time": "2021-01-31T01:27:06Z",
+      "time": "2021-01-31T15:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "7",
+      "origin": "Wellington Stn",
+      "destination": "Kingston",
+      "raw_time": "1:30 pm",
+      "tweet_time": "2021-01-31T01:27:08Z",
+      "time": "2021-01-31T13:30:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "cancelled_from": "Kilbrinie",
+      "cancelled_to": "Miramar",
+      "raw_time": "2:50 pm",
+      "tweet_time": "2021-01-31T01:45:05Z",
+      "time": "2021-01-31T14:50:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "McLintock St",
+      "cancelled_from": "Courtenay Place",
+      "cancelled_to": "McLintock St",
+      "raw_time": "2:15 pm",
+      "tweet_time": "2021-01-31T02:03:06Z",
+      "time": "2021-01-31T14:15:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar - Darlington Road",
+      "cancelled_from": "Karori",
+      "cancelled_to": "Kilbirnie",
+      "raw_time": "5:30 pm",
+      "tweet_time": "2021-01-31T03:03:05Z",
+      "time": "2021-01-31T17:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "313",
+      "origin": "Greytown",
+      "destination": "Wairarapa College",
+      "raw_time": "7:48 am",
+      "tweet_time": "2021-01-31T17:23:04Z",
+      "time": "2021-02-01T07:48:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "36",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:00 am",
+      "tweet_time": "2021-01-31T17:52:05Z",
+      "time": "2021-02-01T07:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Rongatai College",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-01-31T18:16:06Z",
+      "time": "2021-02-01T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-01-31T18:16:07Z",
+      "time": "2021-02-01T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "7:43 am",
+      "tweet_time": "2021-01-31T18:45:06Z",
+      "time": "2021-02-01T07:43:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Johnsonville",
+      "destination": "Wellington Station",
+      "raw_time": "7:57 am",
+      "tweet_time": "2021-01-31T18:51:07Z",
+      "time": "2021-02-01T07:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Courtenay Place",
+      "raw_time": "8:25 am",
+      "tweet_time": "2021-01-31T18:51:08Z",
+      "time": "2021-02-01T08:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Courtenay Place",
+      "raw_time": "8:01 am",
+      "tweet_time": "2021-01-31T18:51:10Z",
+      "time": "2021-02-01T08:01:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "7:43 am",
+      "tweet_time": "2021-01-31T18:51:11Z",
+      "time": "2021-02-01T07:43:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "18e",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-01-31T18:51:13Z",
+      "time": "2021-02-01T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Zoo",
+      "destination": "Wellington Station",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-01-31T18:57:07Z",
+      "time": "2021-02-01T08:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Zoo",
+      "destination": "Wellington Station",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-01-31T18:57:09Z",
+      "time": "2021-02-01T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Lambton Quay",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-01-31T18:57:10Z",
+      "time": "2021-02-01T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Johnsonville West",
+      "destination": "Island Bay",
+      "raw_time": "8:03 am",
+      "tweet_time": "2021-01-31T18:57:12Z",
+      "time": "2021-02-01T08:03:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "raw_time": "7:53 am",
+      "tweet_time": "2021-01-31T18:57:14Z",
+      "time": "2021-02-01T07:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar",
+      "destination": "Johnsonville",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-01-31T18:57:16Z",
+      "time": "2021-02-01T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar",
+      "destination": "Wellington Station",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-01-31T18:57:17Z",
+      "time": "2021-02-01T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Station",
+      "raw_time": "7:58 am",
+      "tweet_time": "2021-01-31T19:03:06Z",
+      "time": "2021-02-01T07:58:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "236",
+      "origin": "Porirua",
+      "destination": "Whitby",
+      "raw_time": "8:10 am",
+      "tweet_time": "2021-01-31T19:03:08Z",
+      "time": "2021-02-01T08:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "210",
+      "origin": "Titahi Bay",
+      "destination": "Porirua",
+      "raw_time": "7:38 am",
+      "tweet_time": "2021-01-31T19:03:09Z",
+      "time": "2021-02-01T07:38:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "210",
+      "origin": "Porirua",
+      "destination": "Titahi Bay",
+      "raw_time": "7:20 am",
+      "tweet_time": "2021-01-31T19:03:10Z",
+      "time": "2021-02-01T07:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "505",
+      "origin": "Huiawa Street",
+      "destination": "Kapiti Schools",
+      "raw_time": "8:25 am",
+      "tweet_time": "2021-01-31T19:10:02Z",
+      "time": "2021-02-01T08:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "501",
+      "origin": "Waimea Road",
+      "destination": "Waikanae School",
+      "raw_time": "8:15 am",
+      "tweet_time": "2021-01-31T19:10:03Z",
+      "time": "2021-02-01T08:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "220",
+      "origin": "Ascot Park",
+      "destination": "Porirua",
+      "raw_time": "8:37 am",
+      "tweet_time": "2021-01-31T19:16:02Z",
+      "time": "2021-02-01T08:37:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington",
+      "raw_time": "7:51 am",
+      "tweet_time": "2021-01-31T19:16:04Z",
+      "time": "2021-02-01T07:51:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Grenada Village",
+      "raw_time": "8:35 am",
+      "tweet_time": "2021-01-31T19:39:04Z",
+      "time": "2021-02-01T08:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Stn",
+      "raw_time": "3:21 pm",
+      "tweet_time": "2021-02-01T02:40:05Z",
+      "time": "2021-02-01T15:21:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Pl",
+      "destination": "Eastbourne Tmns",
+      "raw_time": "3:35 pm",
+      "tweet_time": "2021-02-01T02:52:07Z",
+      "time": "2021-02-01T15:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar Shops",
+      "destination": "Johnsonville",
+      "raw_time": "4:20 pm",
+      "tweet_time": "2021-02-01T03:28:06Z",
+      "time": "2021-02-01T16:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Highbury",
+      "destination": "Khandallah",
+      "raw_time": "4:30 pm",
+      "tweet_time": "2021-02-01T03:34:05Z",
+      "time": "2021-02-01T16:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Highbury Tmns",
+      "destination": "Khandallah",
+      "raw_time": "4:30 pm",
+      "tweet_time": "2021-02-01T03:34:07Z",
+      "time": "2021-02-01T16:30:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "120",
+      "origin": "Lower Hutt",
+      "destination": "Stokes Vly Tmns ",
+      "cancelled_from": "Lower Hutt",
+      "cancelled_to": "Taita Stn",
+      "raw_time": "5:10 pm",
+      "tweet_time": "2021-02-01T04:34:06Z",
+      "time": "2021-02-01T17:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtney Place",
+      "raw_time": "7:35 am",
+      "tweet_time": "2021-02-01T18:34:07Z",
+      "time": "2021-02-02T07:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Lambton Quay",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-02-01T18:52:06Z",
+      "time": "2021-02-02T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "17",
+      "origin": "Kowhai Park",
+      "destination": "Wellington Station",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-01T18:52:08Z",
+      "time": "2021-02-02T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Highbury",
+      "destination": "Khandallah",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-02-01T18:52:09Z",
+      "time": "2021-02-02T07:45:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "18e",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "cancelled_from": "Karori",
+      "cancelled_to": "Kilbirnie",
+      "raw_time": "8:15 am",
+      "tweet_time": "2021-02-01T19:10:06Z",
+      "time": "2021-02-02T08:15:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "130",
+      "origin": "Naenae",
+      "destination": "Petone",
+      "cancelled_from": "Naenae",
+      "cancelled_to": "Waterloo Stantion",
+      "raw_time": "12:50 pm",
+      "tweet_time": "2021-02-02T00:14:05Z",
+      "time": "2021-02-02T12:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "110",
+      "origin": "Upper Hutt",
+      "destination": "Petone Stn",
+      "raw_time": "3:10 pm",
+      "tweet_time": "2021-02-02T02:31:06Z",
+      "time": "2021-02-02T15:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Pk",
+      "destination": "Karori",
+      "raw_time": "3:45 pm",
+      "tweet_time": "2021-02-02T02:31:08Z",
+      "time": "2021-02-02T15:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Karori",
+      "destination": "Courtenay Place",
+      "raw_time": "4:56 pm",
+      "tweet_time": "2021-02-02T04:19:05Z",
+      "time": "2021-02-02T16:56:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Karori",
+      "raw_time": "5:29 pm",
+      "tweet_time": "2021-02-02T04:43:05Z",
+      "time": "2021-02-02T17:29:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "29",
+      "origin": "Wellington Stn",
+      "destination": "Island Bay",
+      "cancelled_from": "Wgtn Stn",
+      "cancelled_to": "Courtenay Pl",
+      "raw_time": "6:20 pm",
+      "tweet_time": "2021-02-02T05:25:06Z",
+      "time": "2021-02-02T18:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "130",
+      "origin": "Naenae Stn",
+      "destination": "Petone Stn",
+      "raw_time": "6:02 pm",
+      "tweet_time": "2021-02-02T05:38:02Z",
+      "time": "2021-02-02T18:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Johnsonville West",
+      "destination": "Island Bay",
+      "raw_time": "8:25 pm",
+      "tweet_time": "2021-02-02T06:31:07Z",
+      "time": "2021-02-02T20:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Johnsonville West",
+      "destination": "Island Bay",
+      "raw_time": "8:25 pm",
+      "tweet_time": "2021-02-02T06:55:07Z",
+      "time": "2021-02-02T20:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington Station",
+      "raw_time": "10:18 pm",
+      "tweet_time": "2021-02-02T07:07:07Z",
+      "time": "2021-02-02T22:18:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Wellington Station",
+      "destination": "Kingston",
+      "raw_time": "9:11 pm",
+      "tweet_time": "2021-02-02T08:01:06Z",
+      "time": "2021-02-02T21:11:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Station",
+      "raw_time": "9:39 pm",
+      "tweet_time": "2021-02-02T08:07:05Z",
+      "time": "2021-02-02T21:39:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "11:45 pm",
+      "tweet_time": "2021-02-02T09:00:10Z",
+      "time": "2021-02-02T23:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie",
+      "raw_time": "6:55 am",
+      "tweet_time": "2021-02-02T17:03:05Z",
+      "time": "2021-02-03T06:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "39",
+      "origin": "Island Bay",
+      "destination": "Wellington Station",
+      "raw_time": "8:20 am",
+      "tweet_time": "2021-02-02T17:09:06Z",
+      "time": "2021-02-03T08:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-02T17:09:08Z",
+      "time": "2021-02-03T08:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "raw_time": "7:53 am",
+      "tweet_time": "2021-02-02T17:09:10Z",
+      "time": "2021-02-03T07:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Highbury",
+      "destination": "Khandallah",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-02-02T17:09:12Z",
+      "time": "2021-02-03T07:45:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-02T17:21:07Z",
+      "time": "2021-02-03T08:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:22 am",
+      "tweet_time": "2021-02-02T17:21:08Z",
+      "time": "2021-02-03T08:22:00+13:00"
+    }
+  },
+  {
+    "BusDelayed": {
+      "route": "220",
+      "origin": "Titahi Bay",
+      "destination": "Ascot Park",
+      "delay_minutes": "20",
+      "raw_time": "7:10 am",
+      "tweet_time": "2021-02-02T18:03:06Z",
+      "time": "2021-02-03T07:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington",
+      "raw_time": "7:30 am",
+      "tweet_time": "2021-02-02T18:03:08Z",
+      "time": "2021-02-03T07:30:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "39",
+      "origin": "Island Bay",
+      "destination": "Wellington Station",
+      "raw_time": "8:20 am",
+      "tweet_time": "2021-02-02T18:03:09Z",
+      "time": "2021-02-03T08:20:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie",
+      "raw_time": "6:55 am",
+      "tweet_time": "2021-02-02T18:03:11Z",
+      "time": "2021-02-03T06:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Wellington",
+      "destination": "Brooklyn",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-02T18:28:02Z",
+      "time": "2021-02-03T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-02-02T18:28:04Z",
+      "time": "2021-02-03T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "7:02 am",
+      "tweet_time": "2021-02-02T18:28:05Z",
+      "time": "2021-02-03T07:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "7:57 am",
+      "tweet_time": "2021-02-02T18:33:09Z",
+      "time": "2021-02-03T07:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Rongotai College",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-02-02T18:33:10Z",
+      "time": "2021-02-03T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Courtenay Place",
+      "raw_time": "7:15 am",
+      "tweet_time": "2021-02-02T18:33:12Z",
+      "time": "2021-02-03T07:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington",
+      "raw_time": "7:51 am",
+      "tweet_time": "2021-02-02T18:33:13Z",
+      "time": "2021-02-03T07:51:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:22 am",
+      "tweet_time": "2021-02-02T18:33:14Z",
+      "time": "2021-02-03T08:22:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-02-02T18:51:08Z",
+      "time": "2021-02-03T08:05:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "29",
+      "origin": "Wellington",
+      "destination": "Brooklyn",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-02T18:51:09Z",
+      "time": "2021-02-03T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "36",
+      "origin": "Lyall Bay",
+      "destination": "Wellington",
+      "raw_time": "8:00 am",
+      "tweet_time": "2021-02-02T18:57:07Z",
+      "time": "2021-02-03T08:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Courtenay Place",
+      "raw_time": "8:25 am",
+      "tweet_time": "2021-02-02T19:03:08Z",
+      "time": "2021-02-03T08:25:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "220",
+      "origin": "Titahi Bay",
+      "destination": "Ascot Park",
+      "cancelled_from": "Titahi Bay",
+      "cancelled_to": "Porirua Station",
+      "raw_time": "9:11 am",
+      "tweet_time": "2021-02-02T20:33:07Z",
+      "time": "2021-02-03T09:11:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "2:42 pm",
+      "tweet_time": "2021-02-03T01:51:06Z",
+      "time": "2021-02-03T14:42:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Churton Park",
+      "raw_time": "2:53 pm",
+      "tweet_time": "2021-02-03T01:57:06Z",
+      "time": "2021-02-03T14:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "13",
+      "origin": "Lambton Central",
+      "destination": "Mairangi",
+      "raw_time": "4:57 pm",
+      "tweet_time": "2021-02-03T03:10:06Z",
+      "time": "2021-02-03T16:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Karori",
+      "destination": "Courtenay Place",
+      "raw_time": "3:50 pm",
+      "tweet_time": "2021-02-03T03:10:10Z",
+      "time": "2021-02-03T15:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "5:10 pm",
+      "tweet_time": "2021-02-03T03:15:07Z",
+      "time": "2021-02-03T17:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Courtenay Place",
+      "destination": "Johnsonville",
+      "raw_time": "4:38 pm",
+      "tweet_time": "2021-02-03T03:15:09Z",
+      "time": "2021-02-03T16:38:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar",
+      "destination": "Johnsonville",
+      "raw_time": "3:50 pm",
+      "tweet_time": "2021-02-03T03:15:10Z",
+      "time": "2021-02-03T15:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar",
+      "destination": "Johnsonville",
+      "raw_time": "4:20 pm",
+      "tweet_time": "2021-02-03T03:39:06Z",
+      "time": "2021-02-03T16:20:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "110",
+      "origin": "Emerald Hill",
+      "destination": "Petone",
+      "cancelled_from": "Emerald hill",
+      "cancelled_to": "Upper Hutt",
+      "raw_time": "5:00 pm",
+      "tweet_time": "2021-02-03T03:57:07Z",
+      "time": "2021-02-03T17:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "30x",
+      "origin": "Wellington Station",
+      "destination": "Moa Point",
+      "raw_time": "5:40 pm",
+      "tweet_time": "2021-02-03T03:57:08Z",
+      "time": "2021-02-03T17:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Wellington Station",
+      "destination": "Brooklyn",
+      "raw_time": "4:53 pm",
+      "tweet_time": "2021-02-03T04:21:05Z",
+      "time": "2021-02-03T16:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Strathmore Park",
+      "destination": "Kilbirnie",
+      "raw_time": "6:30 pm",
+      "tweet_time": "2021-02-03T04:27:07Z",
+      "time": "2021-02-03T18:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington Station",
+      "destination": "Miramar North",
+      "raw_time": "6:10 pm",
+      "tweet_time": "2021-02-03T04:27:08Z",
+      "time": "2021-02-03T18:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Kilbirnie",
+      "destination": "Starthmore Park",
+      "raw_time": "6:05 pm",
+      "tweet_time": "2021-02-03T04:27:09Z",
+      "time": "2021-02-03T18:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Karori Mall",
+      "raw_time": "5:29 pm",
+      "tweet_time": "2021-02-03T04:27:11Z",
+      "time": "2021-02-03T17:29:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:10 pm",
+      "tweet_time": "2021-02-03T06:21:07Z",
+      "time": "2021-02-03T19:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "8:55 pm",
+      "tweet_time": "2021-02-03T06:39:07Z",
+      "time": "2021-02-03T20:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne",
+      "raw_time": "8:35 pm",
+      "tweet_time": "2021-02-03T06:39:09Z",
+      "time": "2021-02-03T20:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington",
+      "raw_time": "2:50 pm",
+      "tweet_time": "2021-02-04T00:46:11Z",
+      "time": "2021-02-04T14:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "2:57 pm",
+      "tweet_time": "2021-02-04T00:46:13Z",
+      "time": "2021-02-04T14:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Seatoun",
+      "raw_time": "2:52 pm",
+      "tweet_time": "2021-02-04T00:46:15Z",
+      "time": "2021-02-04T14:52:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "1:42 pm",
+      "tweet_time": "2021-02-04T00:46:17Z",
+      "time": "2021-02-04T13:42:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Kilbirnie",
+      "raw_time": "1:30 pm",
+      "tweet_time": "2021-02-04T00:46:19Z",
+      "time": "2021-02-04T13:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "3:40 pm",
+      "tweet_time": "2021-02-04T01:10:06Z",
+      "time": "2021-02-04T15:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Kilbirnie",
+      "destination": "Strathmpre Park",
+      "raw_time": "3:05 pm",
+      "tweet_time": "2021-02-04T01:10:07Z",
+      "time": "2021-02-04T15:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "3:30 pm",
+      "tweet_time": "2021-02-04T01:16:06Z",
+      "time": "2021-02-04T15:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Tirangi Road",
+      "destination": "Wellington Station",
+      "raw_time": "3:40 pm",
+      "tweet_time": "2021-02-04T02:22:07Z",
+      "time": "2021-02-04T15:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Stn",
+      "raw_time": "4:23 pm",
+      "tweet_time": "2021-02-04T02:52:05Z",
+      "time": "2021-02-04T16:23:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "4:00 pm",
+      "tweet_time": "2021-02-04T03:28:07Z",
+      "time": "2021-02-04T16:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun",
+      "destination": "Karori",
+      "raw_time": "4:16 pm",
+      "tweet_time": "2021-02-04T03:28:09Z",
+      "time": "2021-02-04T16:16:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "5:08 pm",
+      "tweet_time": "2021-02-04T03:46:07Z",
+      "time": "2021-02-04T17:08:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Tirangi Road",
+      "raw_time": "5:02 pm",
+      "tweet_time": "2021-02-04T03:46:09Z",
+      "time": "2021-02-04T17:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "4:47 pm",
+      "tweet_time": "2021-02-04T03:46:10Z",
+      "time": "2021-02-04T16:47:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Kilbirnie",
+      "raw_time": "4:40 pm",
+      "tweet_time": "2021-02-04T03:46:12Z",
+      "time": "2021-02-04T16:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Courtenay Place",
+      "destination": "Johnsonville West",
+      "raw_time": "4:47 pm",
+      "tweet_time": "2021-02-04T03:52:07Z",
+      "time": "2021-02-04T16:47:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "5:20 pm",
+      "tweet_time": "2021-02-04T03:52:09Z",
+      "time": "2021-02-04T17:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Stn",
+      "raw_time": "5:10 pm",
+      "tweet_time": "2021-02-04T03:58:06Z",
+      "time": "2021-02-04T17:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington Stn",
+      "destination": "Miramar",
+      "raw_time": "6:10 pm",
+      "tweet_time": "2021-02-04T04:04:05Z",
+      "time": "2021-02-04T18:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Kilbirnie",
+      "destination": "Strathmore Prk",
+      "raw_time": "6:05 pm",
+      "tweet_time": "2021-02-04T04:04:07Z",
+      "time": "2021-02-04T18:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Tirangi Road",
+      "destination": "Wellington Station",
+      "raw_time": "6:20 pm",
+      "tweet_time": "2021-02-04T04:10:09Z",
+      "time": "2021-02-04T18:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington Station",
+      "destination": "Miramar North",
+      "raw_time": "6:10 pm",
+      "tweet_time": "2021-02-04T04:16:07Z",
+      "time": "2021-02-04T18:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Strathmore Prk",
+      "destination": "Kilbirnie",
+      "raw_time": "6:30 pm",
+      "tweet_time": "2021-02-04T05:40:06Z",
+      "time": "2021-02-04T18:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "7:15 pm",
+      "tweet_time": "2021-02-04T05:40:08Z",
+      "time": "2021-02-04T19:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington Stn",
+      "destination": "Lyall Bay",
+      "raw_time": "6:30 pm",
+      "tweet_time": "2021-02-04T05:46:05Z",
+      "time": "2021-02-04T18:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "7",
+      "origin": "Wellington Station",
+      "destination": "Kingston",
+      "raw_time": "8:30 pm",
+      "tweet_time": "2021-02-04T05:58:16Z",
+      "time": "2021-02-04T20:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Eastbourne",
+      "destination": "Courtenay Place",
+      "raw_time": "8:30 pm",
+      "tweet_time": "2021-02-04T07:40:06Z",
+      "time": "2021-02-04T20:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "12",
+      "origin": "Kilbirnie",
+      "destination": "Strathmore Park terminus",
+      "raw_time": "10:40 pm",
+      "tweet_time": "2021-02-04T07:52:05Z",
+      "time": "2021-02-04T22:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "11:30 pm",
+      "tweet_time": "2021-02-04T09:04:06Z",
+      "time": "2021-02-04T23:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie",
+      "raw_time": "7:20 am",
+      "tweet_time": "2021-02-04T17:34:05Z",
+      "time": "2021-02-05T07:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Khandallah",
+      "destination": "Highbury",
+      "raw_time": "6:50 am",
+      "tweet_time": "2021-02-04T17:34:06Z",
+      "time": "2021-02-05T06:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie that was previously",
+      "raw_time": "7:20 am",
+      "tweet_time": "2021-02-04T17:40:06Z",
+      "time": "2021-02-05T07:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Zoo",
+      "destination": "Wellington Station",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-02-04T17:40:07Z",
+      "time": "2021-02-05T08:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-02-04T17:40:08Z",
+      "time": "2021-02-05T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "17",
+      "origin": "Kowhai Park",
+      "destination": "Wellington Station",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-04T17:40:10Z",
+      "time": "2021-02-05T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:51 am",
+      "tweet_time": "2021-02-04T17:58:05Z",
+      "time": "2021-02-05T07:51:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Island Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:16 am",
+      "tweet_time": "2021-02-04T18:04:05Z",
+      "time": "2021-02-05T07:16:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "7:53 am",
+      "tweet_time": "2021-02-04T18:10:06Z",
+      "time": "2021-02-05T07:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Johnsonville",
+      "destination": "Wellington Station",
+      "raw_time": "7:57 am",
+      "tweet_time": "2021-02-04T18:10:08Z",
+      "time": "2021-02-05T07:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Station",
+      "raw_time": "8:18 am",
+      "tweet_time": "2021-02-04T18:10:09Z",
+      "time": "2021-02-05T08:18:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-02-04T18:16:08Z",
+      "time": "2021-02-05T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "18e",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-02-04T18:16:09Z",
+      "time": "2021-02-05T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Miramar",
+      "destination": "Johnsonville",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-04T18:40:07Z",
+      "time": "2021-02-05T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Zoo",
+      "destination": "Wellington Station",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-02-04T18:40:09Z",
+      "time": "2021-02-05T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "36",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "8:00 am",
+      "tweet_time": "2021-02-04T18:46:06Z",
+      "time": "2021-02-05T08:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Churton Park",
+      "raw_time": "7:52 am",
+      "tweet_time": "2021-02-04T18:46:09Z",
+      "time": "2021-02-05T07:52:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Lyall Bay",
+      "destination": "Wellington Station",
+      "raw_time": "8:10 am",
+      "tweet_time": "2021-02-04T18:58:07Z",
+      "time": "2021-02-05T08:10:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "18e",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "cancelled_from": "Karori",
+      "cancelled_to": "Kilbirnie",
+      "raw_time": "8:15 am",
+      "tweet_time": "2021-02-04T19:10:08Z",
+      "time": "2021-02-05T08:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "18e",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-02-04T19:22:06Z",
+      "time": "2021-02-05T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:31 am",
+      "tweet_time": "2021-02-04T19:58:07Z",
+      "time": "2021-02-05T08:31:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Karori Mall",
+      "raw_time": "1:49 pm",
+      "tweet_time": "2021-02-05T00:46:04Z",
+      "time": "2021-02-05T13:49:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Karori Mall",
+      "destination": "Courtenay Place to",
+      "raw_time": "2:20 pm",
+      "tweet_time": "2021-02-05T00:52:06Z",
+      "time": "2021-02-05T14:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "McLintock St",
+      "raw_time": "2:45 pm",
+      "tweet_time": "2021-02-05T01:46:06Z",
+      "time": "2021-02-05T14:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun",
+      "destination": "Karori",
+      "raw_time": "3:00 pm",
+      "tweet_time": "2021-02-05T01:58:06Z",
+      "time": "2021-02-05T15:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Wellington Stn",
+      "destination": "Victoria Uni",
+      "raw_time": "3:35 pm",
+      "tweet_time": "2021-02-05T02:04:06Z",
+      "time": "2021-02-05T15:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Stn",
+      "destination": "Lyall Bay",
+      "raw_time": "3:02 pm",
+      "tweet_time": "2021-02-05T02:04:08Z",
+      "time": "2021-02-05T15:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Kilbirnie",
+      "destination": "Wilton",
+      "raw_time": "4:47 pm",
+      "tweet_time": "2021-02-05T02:04:10Z",
+      "time": "2021-02-05T16:47:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun",
+      "destination": "Karori",
+      "raw_time": "3:00 pm",
+      "tweet_time": "2021-02-05T02:04:12Z",
+      "time": "2021-02-05T15:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "3:15 pm",
+      "tweet_time": "2021-02-05T02:04:13Z",
+      "time": "2021-02-05T15:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Karori",
+      "destination": "Courtenay Place",
+      "raw_time": "6:32 pm",
+      "tweet_time": "2021-02-05T03:52:06Z",
+      "time": "2021-02-05T18:32:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "33",
+      "origin": "Lambton Central",
+      "destination": "Karori",
+      "raw_time": "5:26 pm",
+      "tweet_time": "2021-02-05T03:52:07Z",
+      "time": "2021-02-05T17:26:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "5:57 pm",
+      "tweet_time": "2021-02-05T03:52:09Z",
+      "time": "2021-02-05T17:57:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "81",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne",
+      "raw_time": "4:55 pm",
+      "tweet_time": "2021-02-05T03:52:10Z",
+      "time": "2021-02-05T16:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "114",
+      "origin": "Upper Hutt",
+      "destination": "Trentham",
+      "raw_time": "5:02 pm",
+      "tweet_time": "2021-02-05T04:16:04Z",
+      "time": "2021-02-05T17:02:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "114",
+      "origin": "Upper Hutt",
+      "destination": "Trentham",
+      "raw_time": "5:02 pm",
+      "tweet_time": "2021-02-05T04:28:06Z",
+      "time": "2021-02-05T17:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Karori Mall",
+      "destination": "Courtenay Place",
+      "raw_time": "6:32 pm",
+      "tweet_time": "2021-02-05T04:28:07Z",
+      "time": "2021-02-05T18:32:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington Station",
+      "destination": "Miramar North",
+      "raw_time": "6:10 pm",
+      "tweet_time": "2021-02-05T05:16:07Z",
+      "time": "2021-02-05T18:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Seatoun Park",
+      "raw_time": "7:22 pm",
+      "tweet_time": "2021-02-05T05:34:06Z",
+      "time": "2021-02-05T19:22:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Karori Mall",
+      "raw_time": "8:00 pm",
+      "tweet_time": "2021-02-05T05:46:06Z",
+      "time": "2021-02-05T20:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:45 pm",
+      "tweet_time": "2021-02-05T06:40:06Z",
+      "time": "2021-02-05T20:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Mairangi",
+      "destination": "Wellington Station",
+      "raw_time": "9:02 pm",
+      "tweet_time": "2021-02-05T06:46:06Z",
+      "time": "2021-02-05T21:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "9:42 pm",
+      "tweet_time": "2021-02-05T08:04:05Z",
+      "time": "2021-02-05T21:42:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Tirangi Rd",
+      "destination": "Wellington Station",
+      "raw_time": "9:50 am",
+      "tweet_time": "2021-02-05T20:52:05Z",
+      "time": "2021-02-06T09:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "10:45 am",
+      "tweet_time": "2021-02-05T21:52:05Z",
+      "time": "2021-02-06T10:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Tirangi Rd",
+      "destination": "Wellington Station",
+      "raw_time": "11:50 am",
+      "tweet_time": "2021-02-05T22:58:05Z",
+      "time": "2021-02-06T11:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station ",
+      "destination": "Lyall Bay",
+      "raw_time": "12:45 pm",
+      "tweet_time": "2021-02-05T23:58:04Z",
+      "time": "2021-02-06T12:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "160",
+      "origin": "Lower Hutt",
+      "destination": "Wainuiomata",
+      "raw_time": "9:00 am",
+      "tweet_time": "2021-02-06T18:54:04Z",
+      "time": "2021-02-07T09:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "160",
+      "origin": "Wainuiomata",
+      "destination": "Lower Hutt",
+      "raw_time": "8:23 am",
+      "tweet_time": "2021-02-06T18:54:06Z",
+      "time": "2021-02-07T08:23:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "160",
+      "origin": "Lower Hutt",
+      "destination": "Wainuiomata",
+      "raw_time": "9:00 am",
+      "tweet_time": "2021-02-06T19:12:04Z",
+      "time": "2021-02-07T09:00:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "160",
+      "origin": "Wainuiomata",
+      "destination": "Lower Hutt",
+      "raw_time": "8:23 am",
+      "tweet_time": "2021-02-06T19:30:04Z",
+      "time": "2021-02-07T08:23:00+13:00"
+    }
+  },
+  {
+    "BusDelayed": {
+      "route": "130",
+      "origin": "Naenae",
+      "destination": "Petone",
+      "delay_minutes": "20",
+      "raw_time": "11:00 am",
+      "tweet_time": "2021-02-06T22:00:05Z",
+      "time": "2021-02-07T11:00:00+13:00"
+    }
+  },
+  {
+    "BusDelayed": {
+      "route": "130",
+      "origin": "Petone",
+      "destination": "Naenae",
+      "delay_minutes": "",
+      "raw_time": "10:15 am",
+      "tweet_time": "2021-02-06T22:00:06Z",
+      "time": "2021-02-07T10:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "83",
+      "origin": "Courtenay Place",
+      "destination": "Eastbourne",
+      "raw_time": "4:45 pm",
+      "tweet_time": "2021-02-07T02:35:07Z",
+      "time": "2021-02-07T16:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Courtenay Place",
+      "destination": "Karori",
+      "raw_time": "3:30 pm",
+      "tweet_time": "2021-02-07T02:41:06Z",
+      "time": "2021-02-07T15:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "21",
+      "origin": "Karori",
+      "destination": "Courtenay Place",
+      "raw_time": "4:02 pm",
+      "tweet_time": "2021-02-07T02:47:05Z",
+      "time": "2021-02-07T16:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Johnsonville West is part",
+      "raw_time": "8:15 am",
+      "tweet_time": "2021-02-07T19:40:06Z",
+      "time": "2021-02-08T08:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "18e",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "1:38 pm",
+      "tweet_time": "2021-02-08T00:45:04Z",
+      "time": "2021-02-08T13:38:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "2",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "cancelled_from": "Kilbirnie",
+      "cancelled_to": "Karori",
+      "raw_time": "1:30 pm",
+      "tweet_time": "2021-02-08T00:56:06Z",
+      "time": "2021-02-08T13:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "18e",
+      "origin": "Karori",
+      "destination": "Miramar",
+      "raw_time": "2:40 pm",
+      "tweet_time": "2021-02-08T01:26:05Z",
+      "time": "2021-02-08T14:40:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Miramar is part",
+      "raw_time": "2:50 pm",
+      "tweet_time": "2021-02-08T01:56:06Z",
+      "time": "2021-02-08T14:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "25",
+      "origin": "Highbury",
+      "destination": "Khandallah",
+      "raw_time": "7:45 am",
+      "tweet_time": "2021-02-08T17:15:05Z",
+      "time": "2021-02-09T07:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Wellington Station",
+      "destination": "Brooklyn",
+      "raw_time": "7:28 am",
+      "tweet_time": "2021-02-08T17:15:07Z",
+      "time": "2021-02-09T07:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie",
+      "raw_time": "7:10 am",
+      "tweet_time": "2021-02-08T17:15:08Z",
+      "time": "2021-02-09T07:10:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Johnsonville",
+      "raw_time": "8:00 am",
+      "tweet_time": "2021-02-08T17:27:08Z",
+      "time": "2021-02-09T08:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Johnsonville West",
+      "destination": "Island Bay",
+      "raw_time": "8:03 am",
+      "tweet_time": "2021-02-08T17:27:10Z",
+      "time": "2021-02-09T08:03:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "raw_time": "7:33 am",
+      "tweet_time": "2021-02-08T17:27:12Z",
+      "time": "2021-02-09T07:33:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Station",
+      "destination": "Houghton Bay",
+      "raw_time": "7:00 am",
+      "tweet_time": "2021-02-08T17:39:05Z",
+      "time": "2021-02-09T07:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:51 am",
+      "tweet_time": "2021-02-08T17:45:07Z",
+      "time": "2021-02-09T07:51:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Molesworth Street",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-02-08T17:45:08Z",
+      "time": "2021-02-09T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "39",
+      "origin": "Island Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:50 am",
+      "tweet_time": "2021-02-08T17:45:09Z",
+      "time": "2021-02-09T07:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "236",
+      "origin": "Whitby",
+      "destination": "Porirua Station",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-02-08T17:45:11Z",
+      "time": "2021-02-09T08:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "236",
+      "origin": "Porirua Station",
+      "destination": "Whitby",
+      "raw_time": "7:35 am",
+      "tweet_time": "2021-02-08T17:45:12Z",
+      "time": "2021-02-09T07:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-08T17:45:15Z",
+      "time": "2021-02-09T08:13:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "25",
+      "origin": "Khandallah",
+      "destination": "Highbury",
+      "cancelled_from": "Khandallah",
+      "cancelled_to": "Wellington Station",
+      "raw_time": "7:05 am",
+      "tweet_time": "2021-02-08T18:33:05Z",
+      "time": "2021-02-09T07:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Zoo",
+      "destination": "Wellington Station",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-02-08T18:51:06Z",
+      "time": "2021-02-09T08:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "27",
+      "origin": "Kingston",
+      "destination": "Wellington Station",
+      "raw_time": "7:58 am",
+      "tweet_time": "2021-02-08T18:51:07Z",
+      "time": "2021-02-09T07:58:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington Station",
+      "raw_time": "7:43 am",
+      "tweet_time": "2021-02-08T18:51:08Z",
+      "time": "2021-02-09T07:43:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-02-08T19:03:06Z",
+      "time": "2021-02-09T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "17",
+      "origin": "Wellington Station",
+      "destination": "Kowhai Park",
+      "raw_time": "8:45 am",
+      "tweet_time": "2021-02-08T19:03:08Z",
+      "time": "2021-02-09T08:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Courtenay Place",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-08T19:09:07Z",
+      "time": "2021-02-09T08:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Wellington Station",
+      "destination": "Johnsonville",
+      "raw_time": "4:07 pm",
+      "tweet_time": "2021-02-09T03:15:07Z",
+      "time": "2021-02-09T16:07:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Courtenay Place",
+      "destination": "Churton Park",
+      "raw_time": "4:27 pm",
+      "tweet_time": "2021-02-09T03:15:09Z",
+      "time": "2021-02-09T16:27:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "7",
+      "origin": "Wellington Station",
+      "destination": "Kingston",
+      "raw_time": "4:55 pm",
+      "tweet_time": "2021-02-09T03:21:07Z",
+      "time": "2021-02-09T16:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "7",
+      "origin": "Wellington Station",
+      "destination": "Kingston",
+      "raw_time": "4:55 pm",
+      "tweet_time": "2021-02-09T03:21:09Z",
+      "time": "2021-02-09T16:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "3",
+      "origin": "Wellington Station",
+      "destination": "Lyall Bay",
+      "raw_time": "4:20 pm",
+      "tweet_time": "2021-02-09T03:21:11Z",
+      "time": "2021-02-09T16:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Jphnsonville",
+      "destination": "Miramar",
+      "raw_time": "3:45 pm",
+      "tweet_time": "2021-02-09T03:39:09Z",
+      "time": "2021-02-09T15:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington St",
+      "destination": "Mirama is part",
+      "raw_time": "4:50 pm",
+      "tweet_time": "2021-02-09T03:57:06Z",
+      "time": "2021-02-09T16:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "31x",
+      "origin": "Wellington St",
+      "destination": "Miramar is part",
+      "raw_time": "4:50 pm",
+      "tweet_time": "2021-02-09T04:03:06Z",
+      "time": "2021-02-09T16:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Kilbirnie",
+      "raw_time": "7:30 pm",
+      "tweet_time": "2021-02-09T06:45:06Z",
+      "time": "2021-02-09T19:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Wellington Station",
+      "destination": "Mairangi",
+      "raw_time": "9:30 pm",
+      "tweet_time": "2021-02-09T07:51:06Z",
+      "time": "2021-02-09T21:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "22",
+      "origin": "Mairangi",
+      "destination": "Wellington Station",
+      "raw_time": "10:02 pm",
+      "tweet_time": "2021-02-09T08:51:05Z",
+      "time": "2021-02-09T22:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Wellington Station",
+      "destination": "Brooklyn",
+      "raw_time": "7:28 am",
+      "tweet_time": "2021-02-09T18:09:07Z",
+      "time": "2021-02-10T07:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie",
+      "raw_time": "7:10 am",
+      "tweet_time": "2021-02-09T18:09:08Z",
+      "time": "2021-02-10T07:10:00+13:00"
+    }
+  },
+  {
+    "BusDelayed": {
+      "route": "25",
+      "origin": "Khandallah",
+      "destination": "Highbury",
+      "delay_minutes": "15",
+      "raw_time": "7:05 am",
+      "tweet_time": "2021-02-09T18:09:10Z",
+      "time": "2021-02-10T07:05:00+13:00"
+    }
+  },
+  {
+    "BusPartCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "cancelled_from": "Grenada Village",
+      "cancelled_to": "Johnsonville",
+      "raw_time": "6:53 am",
+      "tweet_time": "2021-02-09T18:21:07Z",
+      "time": "2021-02-10T06:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-09T18:21:10Z",
+      "time": "2021-02-10T08:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "110",
+      "origin": "Emerald Hill",
+      "destination": "Petone",
+      "raw_time": "7:28 am",
+      "tweet_time": "2021-02-09T18:51:06Z",
+      "time": "2021-02-10T07:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "17",
+      "origin": "Kowhai Park",
+      "destination": "Wellington",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-09T19:03:09Z",
+      "time": "2021-02-10T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Lambton Quay",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-02-09T19:03:10Z",
+      "time": "2021-02-10T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "raw_time": "7:53 am",
+      "tweet_time": "2021-02-09T19:03:14Z",
+      "time": "2021-02-10T07:53:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "170",
+      "origin": "Lower Hutt",
+      "destination": "Wainuiomata has been part",
+      "raw_time": "4:17 pm",
+      "tweet_time": "2021-02-10T03:21:06Z",
+      "time": "2021-02-10T16:17:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Khandallah",
+      "destination": "Lambton Ctrl",
+      "raw_time": "4:55 pm",
+      "tweet_time": "2021-02-10T03:51:08Z",
+      "time": "2021-02-10T16:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington Stn",
+      "raw_time": "5:17 pm",
+      "tweet_time": "2021-02-10T03:51:09Z",
+      "time": "2021-02-10T17:17:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Wellington Stn",
+      "destination": "Miramar",
+      "raw_time": "5:07 pm",
+      "tweet_time": "2021-02-10T04:03:10Z",
+      "time": "2021-02-10T17:07:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington Stn",
+      "raw_time": "5:14 pm",
+      "tweet_time": "2021-02-10T04:10:05Z",
+      "time": "2021-02-10T17:14:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "26",
+      "origin": "Khandallah",
+      "destination": "Lambton Ctrl",
+      "raw_time": "4:55 pm",
+      "tweet_time": "2021-02-10T04:10:09Z",
+      "time": "2021-02-10T16:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "236",
+      "origin": "Porirua Station",
+      "destination": "Whitby",
+      "raw_time": "7:35 am",
+      "tweet_time": "2021-02-10T17:32:05Z",
+      "time": "2021-02-11T07:35:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "17",
+      "origin": "Kowhai Park",
+      "destination": "Wellington",
+      "raw_time": "7:55 am",
+      "tweet_time": "2021-02-10T18:08:06Z",
+      "time": "2021-02-11T07:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington",
+      "raw_time": "7:30 am",
+      "tweet_time": "2021-02-10T18:08:07Z",
+      "time": "2021-02-11T07:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "8:02 am",
+      "tweet_time": "2021-02-10T18:20:09Z",
+      "time": "2021-02-11T08:02:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "19e",
+      "origin": "Johnsonville",
+      "destination": "Wellington",
+      "raw_time": "7:22 am",
+      "tweet_time": "2021-02-10T18:20:10Z",
+      "time": "2021-02-11T07:22:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "18e",
+      "origin": "Miramar",
+      "destination": "Karori",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-02-10T18:32:08Z",
+      "time": "2021-02-11T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Wellington Station",
+      "raw_time": "8:15 am",
+      "tweet_time": "2021-02-10T18:56:07Z",
+      "time": "2021-02-11T08:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Zoo",
+      "destination": "Wellington Station",
+      "raw_time": "8:05 am",
+      "tweet_time": "2021-02-10T18:56:09Z",
+      "time": "2021-02-11T08:05:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "14",
+      "origin": "Wilton",
+      "destination": "Courtenay Place",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-10T19:02:06Z",
+      "time": "2021-02-11T08:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "23",
+      "origin": "Wellington Station",
+      "destination": "Houghton Bay",
+      "raw_time": "4:24 pm",
+      "tweet_time": "2021-02-11T01:26:07Z",
+      "time": "2021-02-11T16:24:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "McLintock Street",
+      "raw_time": "5:15 pm",
+      "tweet_time": "2021-02-11T01:32:07Z",
+      "time": "2021-02-11T17:15:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "110",
+      "origin": "Petone",
+      "destination": "Emerald Hill",
+      "raw_time": "2:48 pm",
+      "tweet_time": "2021-02-11T01:56:07Z",
+      "time": "2021-02-11T14:48:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "7:50 pm",
+      "tweet_time": "2021-02-11T05:32:06Z",
+      "time": "2021-02-11T19:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "160",
+      "origin": "Wainuiomata",
+      "destination": "Lower Hutt",
+      "raw_time": "9:00 pm",
+      "tweet_time": "2021-02-11T08:26:06Z",
+      "time": "2021-02-11T21:00:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:13 am",
+      "tweet_time": "2021-02-11T17:15:48Z",
+      "time": "2021-02-12T08:13:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Brooklyn",
+      "destination": "Wellington Station",
+      "raw_time": "7:30 am",
+      "tweet_time": "2021-02-11T17:17:51Z",
+      "time": "2021-02-12T07:30:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "32x",
+      "origin": "Houghton Bay",
+      "destination": "Molesworth Street",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-02-11T17:20:08Z",
+      "time": "2021-02-12T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Johnsonville West",
+      "destination": "Island Bay",
+      "raw_time": "7:20 am",
+      "tweet_time": "2021-02-11T17:40:47Z",
+      "time": "2021-02-12T07:20:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "24",
+      "origin": "Johnsonville",
+      "destination": "Kilbirnie",
+      "raw_time": "7:10 am",
+      "tweet_time": "2021-02-11T18:14:06Z",
+      "time": "2021-02-12T07:10:00+13:00"
+    }
+  },
+  {
+    "BusReinstated": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "7:25 am",
+      "tweet_time": "2021-02-11T18:26:08Z",
+      "time": "2021-02-12T07:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Wellington",
+      "destination": "Brooklyn",
+      "raw_time": "7:28 am",
+      "tweet_time": "2021-02-11T18:26:09Z",
+      "time": "2021-02-12T07:28:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "raw_time": "7:33 am",
+      "tweet_time": "2021-02-11T18:32:07Z",
+      "time": "2021-02-12T07:33:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Grenada Village",
+      "raw_time": "3:55 pm",
+      "tweet_time": "2021-02-12T01:48:07Z",
+      "time": "2021-02-12T15:55:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "McLintock St",
+      "raw_time": "2:45 pm",
+      "tweet_time": "2021-02-12T01:48:09Z",
+      "time": "2021-02-12T14:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Grenada Village",
+      "destination": "Island Bay",
+      "raw_time": "4:25 pm",
+      "tweet_time": "2021-02-12T03:16:07Z",
+      "time": "2021-02-12T16:25:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Island Bay",
+      "destination": "Grenada Village",
+      "raw_time": "6:06 pm",
+      "tweet_time": "2021-02-12T04:40:07Z",
+      "time": "2021-02-12T18:06:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "29",
+      "origin": "Wellington Stn",
+      "destination": "Brooklyn",
+      "raw_time": "5:50 pm",
+      "tweet_time": "2021-02-12T04:40:09Z",
+      "time": "2021-02-12T17:50:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Seatoun Village",
+      "destination": "Karori",
+      "raw_time": "7:31 pm",
+      "tweet_time": "2021-02-12T06:28:07Z",
+      "time": "2021-02-12T19:31:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "2",
+      "origin": "Karori",
+      "destination": "Seatoun Park",
+      "raw_time": "8:45 pm",
+      "tweet_time": "2021-02-12T07:28:08Z",
+      "time": "2021-02-12T20:45:00+13:00"
+    }
+  },
+  {
+    "BusCancelled": {
+      "route": "1",
+      "origin": "Churton Park",
+      "destination": "Island Bay",
+      "raw_time": "8:45 pm",
+      "tweet_time": "2021-02-12T07:28:11Z",
+      "time": "2021-02-12T20:45:00+13:00"
+    }
+  }
+]

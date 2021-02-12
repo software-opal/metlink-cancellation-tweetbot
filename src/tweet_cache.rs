@@ -2,9 +2,9 @@ use chrono::DateTime;
 use chrono::Utc;
 use egg_mode::tweet::Tweet;
 use serde::{Deserialize, Serialize};
-use std::fs::File;
 use std::io::BufReader;
 use std::io::BufWriter;
+use std::{collections::BTreeMap, fs::File};
 
 type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
 
@@ -31,12 +31,13 @@ pub struct TweetCache {
 
 impl TweetCache {
     pub fn add_tweet(&mut self, tweet: &Tweet) {
-        self.tweets.push(tweet.into());
-        self.tweets.sort();
+        if !self.tweets.iter().any(|c| c.id == tweet.id) {
+            self.tweets.push(TweetContent::from(tweet));
+            self.tweets.sort();
+        }
     }
     pub fn add_all_tweets(&mut self, tweets: &[Tweet]) {
-        self.tweets.extend(tweets.iter().map(|t| t.into()));
-        self.tweets.sort();
+        tweets.iter().for_each(|t| self.add_tweet(t));
     }
     pub fn write(&self) -> Result<()> {
         let file = File::create("./twitter-cache.json")?;
@@ -49,8 +50,18 @@ impl TweetCache {
             Ok(file) => {
                 let reader = BufReader::new(file);
                 // Read the JSON contents of the file as an instance of `User`.
-                let cache = serde_json::from_reader(reader)?;
-                Ok(cache)
+                let cache: TweetCache = serde_json::from_reader(reader)?;
+
+                let tweets = cache
+                    .tweets
+                    .into_iter()
+                    .map(|c| (c.id, c))
+                    .collect::<BTreeMap<_, _>>()
+                    .into_iter()
+                    .map(|(_, c)| c)
+                    .collect();
+
+                Ok(TweetCache { tweets })
             }
             Err(_) => {
                 let cache = TweetCache {
@@ -67,7 +78,7 @@ impl TweetCache {
             .iter()
             .map(|tweet| now - tweet.created_at)
             .min()
-            .map(|diff| diff.num_hours() < 6)
+            .map(|diff| diff.num_hours() < 2)
             .unwrap_or(false)
     }
 }

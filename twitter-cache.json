@@ -2289,6 +2289,21 @@
       "id": 1360086264217620480,
       "created_at": "2021-02-12T04:40:09Z",
       "text": "Bus 29: Bus 29: 5:50pm Wellington Stn - Brooklyn has been cancelled. Please check RTI for next available service."
+    },
+    {
+      "id": 1360113435913064448,
+      "created_at": "2021-02-12T06:28:07Z",
+      "text": "Bus 2: Bus 2: 7:31pm Seatoun Village to Karori is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1360128538842517512,
+      "created_at": "2021-02-12T07:28:08Z",
+      "text": "Bus 2: Bus 2: 8:45pm Karori to Seatoun Park is cancelled. Please check RTI for next service."
+    },
+    {
+      "id": 1360128551501000706,
+      "created_at": "2021-02-12T07:28:11Z",
+      "text": "Bus 1: Bus 1: 8:45pm Churton Park - Island Bay has been cancelled. Please check RTI for next available service."
     }
   ]
 }
