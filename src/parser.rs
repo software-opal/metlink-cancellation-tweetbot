@@ -1,8 +1,7 @@
-use crate::tweet_cache::TweetContent;
-use chrono::{DateTime, Utc};
-use chrono_tz::{Pacific::Auckland, Tz};
+use crate::{time::convert_time_to_instant, tweet_cache::TweetContent};
+use chrono::{DateTime, FixedOffset, Utc};
 use lazy_static::lazy_static;
-use regex::{Captures, Regex, RegexSet};
+use regex::{Captures, Regex};
 use serde::{Deserialize, Serialize};
 use std::{collections::HashSet, unimplemented};
 
@@ -21,7 +20,7 @@ lazy_static! {
     ))
     .unwrap();
     static ref BUS_REINSTATED_RE: Regex = Regex::new(&format!(
-        "{}: +{} {} (has been REINSTATED|has been reinstated and will now run|that was cancelled will now run)",
+        "{}: +{} {} (?:is REINSTATED|is reinstated|has been REINSTATED|has been reinstated and will now run|that was cancelled will now run)",
         BUS_NUM_RE, TIME_RE, BUS_DEST_RE
     ))
     .unwrap();
@@ -56,7 +55,7 @@ pub enum Cancellations {
         destination: String,
         raw_time: String,
         tweet_time: DateTime<Utc>,
-        // time: DateTime<Tz>,
+        time: DateTime<FixedOffset>,
     },
     BusPartCancelled {
         route: String,
@@ -65,14 +64,16 @@ pub enum Cancellations {
         cancelled_from: String,
         cancelled_to: String,
         raw_time: String,
-        tweet_time: DateTime<Utc>, // time: DateTime<Tz>,
+        tweet_time: DateTime<Utc>,
+        time: DateTime<FixedOffset>,
     },
     BusReinstated {
         route: String,
         origin: String,
         destination: String,
         raw_time: String,
-        tweet_time: DateTime<Utc>, // time: DateTime<Tz>,
+        tweet_time: DateTime<Utc>,
+        time: DateTime<FixedOffset>,
     },
     BusDelayed {
         route: String,
@@ -80,19 +81,31 @@ pub enum Cancellations {
         destination: String,
         delay_minutes: String,
         raw_time: String,
-        tweet_time: DateTime<Utc>, // time: DateTime<Tz>,
+        tweet_time: DateTime<Utc>,
+        time: DateTime<FixedOffset>,
     },
 }
 
-fn time_from_capture(tweet: &TweetContent, capture: &Captures) -> (String, Option<()>) {
+fn time_from_capture(tweet: &TweetContent, capture: &Captures) -> (String, DateTime<FixedOffset>) {
+    let hour = capture.name("hour").unwrap().as_str();
+    let minute = capture.name("minute").map(|m| m.as_str()).unwrap_or("00");
+    let period = capture
+        .name("period")
+        .unwrap()
+        .as_str()
+        .to_ascii_lowercase();
+    let hour_u32 = hour.parse::<u32>().unwrap()
+        + match period.as_str() {
+            "am" => 0,
+            "pm" => 12,
+            _ => unreachable!("Unsupported period: {:?}", period),
+        };
+
+    let normalised_time = format!("{}:{} {}", hour, minute, period);
+
     (
-        format!(
-            "{}:{} {}",
-            capture.name("hour").unwrap().as_str(),
-            capture.name("minute").map(|m| m.as_str()).unwrap_or("00"),
-            capture.name("period").unwrap().as_str()
-        ),
-        None,
+        normalised_time,
+        convert_time_to_instant(tweet.created_at, hour_u32, minute.parse().unwrap()).unwrap(),
     )
 }
 
@@ -106,6 +119,7 @@ fn parse_bus_tweet(tweet: &TweetContent) -> Vec<Cancellations> {
                 destination: capture.name("destination").unwrap().as_str().to_string(),
                 raw_time,
                 tweet_time: tweet.created_at,
+                time,
             }]
         })
     })
@@ -119,6 +133,7 @@ fn parse_bus_tweet(tweet: &TweetContent) -> Vec<Cancellations> {
                 delay_minutes: capture.name("delay_mins").unwrap().as_str().to_string(),
                 raw_time,
                 tweet_time: tweet.created_at,
+                time,
             }]
         })
     })
@@ -135,6 +150,7 @@ fn parse_bus_tweet(tweet: &TweetContent) -> Vec<Cancellations> {
                     cancelled_to: capture.name("cancelled_to").unwrap().as_str().to_string(),
                     raw_time,
                     tweet_time: tweet.created_at,
+                    time,
                 }]
             })
     })
@@ -152,6 +168,7 @@ fn parse_bus_tweet(tweet: &TweetContent) -> Vec<Cancellations> {
                     cancelled_to: capture.name("cancelled_to").unwrap().as_str().to_string(),
                     raw_time,
                     tweet_time: tweet.created_at,
+                    time,
                 }]
             })
     })
@@ -167,6 +184,7 @@ fn parse_bus_tweet(tweet: &TweetContent) -> Vec<Cancellations> {
                 cancelled_to: destination,
                 raw_time,
                 tweet_time: tweet.created_at,
+                time,
             }]
         })
     })
@@ -179,6 +197,7 @@ fn parse_bus_tweet(tweet: &TweetContent) -> Vec<Cancellations> {
                 destination: capture.name("destination").unwrap().as_str().to_string(),
                 raw_time,
                 tweet_time: tweet.created_at,
+                time,
             }]
         })
     })
@@ -264,6 +283,7 @@ mod test_parser {
                     destination: "Lyall Bay".to_string(),
                     raw_time: "10:30 am".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 10, 30).unwrap()
                 }]
             );
         }
@@ -279,6 +299,7 @@ mod test_parser {
                     destination: "Wellington Stn".to_string(),
                     raw_time: "5:23 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 5, 23).unwrap()
                 }]
             );
         }
@@ -294,6 +315,7 @@ mod test_parser {
                     destination: "Wellington Station".to_string(),
                     raw_time: "6:00 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 6, 00).unwrap(),
                 }],
             );
         }
@@ -309,6 +331,7 @@ mod test_parser {
                     destination: "Eastbourne".to_string(),
                     raw_time: "8:35 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 8, 35).unwrap()
                 }],
             );
         }
@@ -325,6 +348,7 @@ mod test_parser {
                     destination: "Kilbirnie".to_string(),
                     raw_time: "1:30 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 1, 30).unwrap()
                 }],
             );
         }
@@ -341,6 +365,7 @@ mod test_parser {
                     destination: "Wellington Station".to_string(),
                     raw_time: "3:40 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 3, 40).unwrap()
                 }],
             );
         }
@@ -357,14 +382,13 @@ mod test_parser {
                     destination: "Wellington Stn".to_string(),
                     raw_time: "5:23 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 5, 23).unwrap(),
                 }],
             );
         }
 
         #[test]
         fn test_reinstated_bus_alt() {
-            println!("{}", BUS_FULL_CANCELLED_RE.as_str());
-
             parse_tweet_str(
                 &"Bus 14: Bus 14: 7:43am Kilbirnie to Wilton has been reinstated and will now run.",
                 vec![Cancellations::BusReinstated {
@@ -373,13 +397,12 @@ mod test_parser {
                     destination: "Wilton".to_string(),
                     raw_time: "7:43 am".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 7, 43).unwrap(),
                 }],
             );
         }
         #[test]
         fn test_reinstated_bus_alt2() {
-            println!("{}", BUS_FULL_CANCELLED_RE.as_str());
-
             parse_tweet_str(
                 &"Bus 1: Bus 1: 8:13am Churton Park to Island Bay that was cancelled will now run.",
                 vec![Cancellations::BusReinstated {
@@ -388,6 +411,40 @@ mod test_parser {
                     destination: "Island Bay".to_string(),
                     raw_time: "8:13 am".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 8, 13).unwrap(),
+                }],
+            );
+        }
+        #[test]
+        fn test_reinstated_bus_alt3() {
+            println!("{}", BUS_REINSTATED_RE.as_str());
+
+            parse_tweet_str(
+                &"Bus 160: Bus 160: 9:00am from Lower Hutt to Wainuiomata is REINSTATED.",
+                vec![Cancellations::BusReinstated {
+                    route: "160".to_string(),
+                    origin: "Lower Hutt".to_string(),
+                    destination: "Wainuiomata".to_string(),
+                    raw_time: "9:00 am".to_string(),
+                    tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 9, 00).unwrap(),
+                }],
+            );
+        }
+
+        #[test]
+        fn test_reinstated_bus_alt4() {
+            println!("{}", BUS_REINSTATED_RE.as_str());
+
+            parse_tweet_str(
+                &"Bus 160: Bus 160: 8:23am from Wainuiomata to Lower Hutt is reinstated.",
+                vec![Cancellations::BusReinstated {
+                    route: "160".to_string(),
+                    origin: "Wainuiomata".to_string(),
+                    destination: "Lower Hutt".to_string(),
+                    raw_time: "8:23 am".to_string(),
+                    tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 8, 23).unwrap(),
                 }],
             );
         }
@@ -405,6 +462,7 @@ mod test_parser {
                     delay_minutes: "20".to_string(),
                     raw_time: "7:00 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 7, 00).unwrap()
                 }],
             );
         }
@@ -422,6 +480,7 @@ mod test_parser {
                     delay_minutes: "20".to_string(),
                     raw_time: "5:03 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 5, 03).unwrap()
                 }],
             );
         }
@@ -440,6 +499,7 @@ mod test_parser {
                     delay_minutes: "20".to_string(),
                     raw_time: "7:10 am".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 7, 10).unwrap()
                 }],
             );
         }
@@ -458,6 +518,7 @@ mod test_parser {
                     cancelled_to: "Miramar".to_string(),
                     raw_time: "6:15 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 6, 15).unwrap()
                 }],
             );
         }
@@ -476,6 +537,7 @@ mod test_parser {
                     cancelled_to: "Miramar".to_string(),
                     raw_time: "2:50 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 2, 50).unwrap()
                 }],
             );
         }
@@ -493,6 +555,7 @@ mod test_parser {
                     cancelled_to: "Courtenay Pl".to_string(),
                     raw_time: "6:20 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 6, 20).unwrap()
                 }],
             );
         }
@@ -510,6 +573,7 @@ mod test_parser {
                     cancelled_to: "Porirua Station".to_string(),
                     raw_time: "9:11 am".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 9, 11).unwrap()
                 }],
             );
         }
@@ -527,6 +591,7 @@ mod test_parser {
                     cancelled_to: "Upper Hutt".to_string(),
                     raw_time: "5:00 pm".to_string(),
                     tweet_time: *SAMPLE_TIME,
+                    time: convert_time_to_instant(*SAMPLE_TIME, 12 + 5, 00).unwrap()
                 }],
             );
         }

@@ -8,6 +8,7 @@ use egg_mode::Token;
 use serde::Deserialize;
 
 mod parser;
+mod time;
 mod tweet_cache;
 
 #[derive(Deserialize)]
@@ -86,7 +87,7 @@ pub async fn main() -> Result<()> {
             parser::parse_tweet(tweet)
         })
         .collect();
-    serde_json::to_writer_pretty(File::create("twitter-cancellations.json")?, &cancellations);
+    serde_json::to_writer_pretty(File::create("twitter-cancellations.json")?, &cancellations)?;
 
     Ok(())
 }
