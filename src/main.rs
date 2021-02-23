@@ -1,6 +1,9 @@
+use chrono_tz::Pacific::Auckland;
 use crate::tweet_cache::TweetCache;
+use chrono::{DateTime, Utc};
 use egg_mode::tweet::user_timeline;
 use egg_mode::tweet::{Timeline, Tweet};
+use parser::Cancellations;
 use std::fs::File;
 use std::io::BufReader;
 
@@ -79,15 +82,37 @@ pub async fn main() -> Result<()> {
         load_tweets(&creds, &mut cache).await?;
     }
 
-    let cancellations: Vec<_> = cache
-        .tweets
-        .iter()
-        .flat_map(|tweet| {
-            println!("{:?}", &tweet);
-            parser::parse_tweet(tweet)
-        })
-        .collect();
+    let mut cancellations: [Vec<Cancellations>; 4] = [vec![], vec![], vec![], vec![]];
+    let mut broken = Vec::with_capacity(10);
+
+    let time = &Utc::now().with_timezone(&Auckland).format("%YW%WD1 00:00:00 %z").to_string();
+    println!("{} -> {}", Utc::now(), time);
+    let previous_monday: DateTime<Utc> = DateTime::parse_from_str(
+        time,
+        "%YW%WD%u %H:%M:%S %z",
+    )
+    .unwrap().into();
+
+    for tweet in cache.tweets {
+        let diff = (previous_monday - tweet.created_at).num_weeks();
+        if 0 < diff && diff < 4 {
+            match parser::parse_tweet(&tweet) {
+                Ok(parsed_cancellation) => cancellations[diff as usize].extend(parsed_cancellation),
+                Err(err) => broken.push((tweet, err)),
+            }
+        }
+    }
+
     serde_json::to_writer_pretty(File::create("twitter-cancellations.json")?, &cancellations)?;
+
+    if !broken.is_empty() {
+        panic!(
+            "Unable to parse: {:#?}\n Total of {} tweets failed to parse, {} were successfully parsed",
+            broken,
+            broken.len(),
+            cancellations.len()
+        )
+    }
 
     Ok(())
 }

@@ -78,7 +78,7 @@ impl TweetCache {
             .iter()
             .map(|tweet| now - tweet.created_at)
             .min()
-            .map(|diff| diff.num_hours() < 2)
+            .map(|diff| diff.num_hours() < 12)
             .unwrap_or(false)
     }
 }

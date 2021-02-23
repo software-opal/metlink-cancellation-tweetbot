@@ -26,11 +26,10 @@ mod test_time {
     use lazy_static::lazy_static;
 
     lazy_static! {
-
-    // 1pm 2021-02-06
-            static ref SAMPLE_TIME_1PM: DateTime<Utc> = DateTime::parse_from_rfc3339("2021-02-06T00:12:34.567Z")
-        .unwrap()
-        .with_timezone(&Utc);
+        // 1pm 2021-02-06
+        static ref SAMPLE_TIME_1PM: DateTime<Utc> = DateTime::parse_from_rfc3339("2021-02-06T00:12:34.567Z")
+            .unwrap()
+            .with_timezone(&Utc);
     }
 
     #[test]
