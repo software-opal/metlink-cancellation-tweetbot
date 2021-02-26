@@ -1,6 +1,7 @@
-use chrono_tz::Pacific::Auckland;
+use crate::summary::summarize;
 use crate::tweet_cache::TweetCache;
 use chrono::{DateTime, Utc};
+use chrono_tz::Pacific::Auckland;
 use egg_mode::tweet::user_timeline;
 use egg_mode::tweet::{Timeline, Tweet};
 use parser::Cancellations;
@@ -11,6 +12,7 @@ use egg_mode::Token;
 use serde::Deserialize;
 
 mod parser;
+mod summary;
 mod time;
 mod tweet_cache;
 
@@ -85,25 +87,31 @@ pub async fn main() -> Result<()> {
     let mut cancellations: [Vec<Cancellations>; 4] = [vec![], vec![], vec![], vec![]];
     let mut broken = Vec::with_capacity(10);
 
-    let time = &Utc::now().with_timezone(&Auckland).format("%YW%WD1 00:00:00 %z").to_string();
+    let time = &Utc::now()
+        .with_timezone(&Auckland)
+        .format("%YW%WD1 00:00:00 %z")
+        .to_string();
     println!("{} -> {}", Utc::now(), time);
-    let previous_monday: DateTime<Utc> = DateTime::parse_from_str(
-        time,
-        "%YW%WD%u %H:%M:%S %z",
-    )
-    .unwrap().into();
+    let previous_monday: DateTime<Utc> = DateTime::parse_from_str(time, "%YW%WD%u %H:%M:%S %z")
+        .unwrap()
+        .into();
 
     for tweet in cache.tweets {
         let diff = (previous_monday - tweet.created_at).num_weeks();
-        if 0 < diff && diff < 4 {
+        println!("{} - {} = {} = {}", previous_monday, tweet.created_at, previous_monday - tweet.created_at, diff);
+        if 0 <= diff && diff < 4 {
             match parser::parse_tweet(&tweet) {
-                Ok(parsed_cancellation) => cancellations[diff as usize].extend(parsed_cancellation),
-                Err(err) => broken.push((tweet, err)),
+                    Ok(parsed_cancellation) => cancellations[diff as usize].extend(parsed_cancellation),
+                    Err(err) => broken.push((tweet, err)),
+                }
             }
-        }
     }
 
     serde_json::to_writer_pretty(File::create("twitter-cancellations.json")?, &cancellations)?;
+
+    for cans in &cancellations {
+        println!("{:#?}", summarize(cans))
+    }
 
     if !broken.is_empty() {
         panic!(

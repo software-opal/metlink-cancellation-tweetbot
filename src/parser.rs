@@ -20,7 +20,7 @@ lazy_static! {
     ))
     .unwrap();
     static ref BUS_REINSTATED_RE: Regex = Regex::new(&format!(
-        "{0}: *{1} {2} +(?:is REINSTATED|is reinstated|has been REINSTATED|has been reinstated and will now run|t?hat was(?: previously)? cancelled will now run|will now run)",
+        "{0}: *{1} {2} +(?:is REINSTATED|is REINSTAED|is reinstated|has been REINSTATED|has been reinstated and will now run|t?hat was(?: previously)? cancelled will now run|will now run)",
         BUS_NUM_RE, TIME_RE, BUS_DEST_RE
     ))
     .unwrap();
@@ -92,6 +92,25 @@ pub enum Cancellations {
         tweet_time: DateTime<Utc>,
         time: DateTime<FixedOffset>,
     },
+}
+
+impl Cancellations {
+    pub fn tweet_time(&self) -> &DateTime<Utc> {
+        match self {
+            Cancellations::BusCancelled { tweet_time, .. } => tweet_time,
+            Cancellations::BusPartCancelled { tweet_time, .. } => tweet_time,
+            Cancellations::BusReinstated { tweet_time, .. } => tweet_time,
+            Cancellations::BusDelayed { tweet_time, .. } => tweet_time,
+        }
+    }
+    pub fn time(&self) -> &DateTime<FixedOffset> {
+        match self {
+            Cancellations::BusCancelled { time, .. } => time,
+            Cancellations::BusPartCancelled { time, .. } => time,
+            Cancellations::BusReinstated { time, .. } => time,
+            Cancellations::BusDelayed { time, .. } => time,
+        }
+    }
 }
 
 fn do_time_from(
@@ -302,6 +321,7 @@ lazy_static! {
             1314733655579922435,
             1314737174181367812,
             1314737926467579907,
+            1315364812663083010,
             1318041702188216321,
             1318391755377496065,
             1319510878396370946,
@@ -316,17 +336,16 @@ lazy_static! {
             1335745856847286275,
             1337504190365462528,
             1339338275341791233,
+            1339766601579548672,
             1340450608818601984,
+            1346375145888206849,
+            1346657252422270976,
             1346992964510248961,
             1348859010426892290,
             1349203333723033603,
-            1346657252422270976,
             1350225276978909184,
             1351244750372921345,
-            1346375145888206849,
             1353179739381395456,
-            1315364812663083010,
-            1339766601579548672,
             1354564608745381890,
             1354966519957000195,
             1354966526365892612,
@@ -338,6 +357,12 @@ lazy_static! {
             1360050266813329410,
             1360053285831364608,
             1360870398640807937,
+            1362241741579898883,
+            1362497545927159809,
+            1363612979686645761,
+            1363667353708359686,
+            1364304051546939396,
+            1365055494612779015,
         ]);
         h
     };
