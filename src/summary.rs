@@ -106,6 +106,12 @@ impl<'a> FromIterator<&'a Duration> for CancellationNoticeStats {
 
 pub fn summarize(cancellations: &[Cancellations]) -> CancellationSummary {
     return CancellationSummary {
-        stats: cancellations.iter().collect(),
+        stats: cancellations
+            .iter()
+            .filter(|c| match c {
+                Cancellations::BusCancelled { .. } => true,
+                _ => false,
+            })
+            .collect(),
     };
 }

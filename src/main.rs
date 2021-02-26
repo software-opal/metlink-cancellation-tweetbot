@@ -98,13 +98,19 @@ pub async fn main() -> Result<()> {
 
     for tweet in cache.tweets {
         let diff = (previous_monday - tweet.created_at).num_weeks();
-        println!("{} - {} = {} = {}", previous_monday, tweet.created_at, previous_monday - tweet.created_at, diff);
+        println!(
+            "{} - {} = {} = {}",
+            previous_monday,
+            tweet.created_at,
+            previous_monday - tweet.created_at,
+            diff
+        );
         if 0 <= diff && diff < 4 {
             match parser::parse_tweet(&tweet) {
-                    Ok(parsed_cancellation) => cancellations[diff as usize].extend(parsed_cancellation),
-                    Err(err) => broken.push((tweet, err)),
-                }
+                Ok(parsed_cancellation) => cancellations[diff as usize].extend(parsed_cancellation),
+                Err(err) => broken.push((tweet, err)),
             }
+        }
     }
 
     serde_json::to_writer_pretty(File::create("twitter-cancellations.json")?, &cancellations)?;
