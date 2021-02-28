@@ -14339,6 +14339,156 @@
       "id": 1365177296756248576,
       "created_at": "2021-02-26T05:50:05Z",
       "text": "Bus 120: 6:35pm Lower Hutt to Stokes Valley cancelled. Next service 6:55pm."
+    },
+    {
+      "id": 1365385656948547585,
+      "created_at": "2021-02-26T19:38:02Z",
+      "text": "Bus 130: 8:30am Naenae to Petone is cancelled."
+    },
+    {
+      "id": 1365386666605645826,
+      "created_at": "2021-02-26T19:42:03Z",
+      "text": "Bus 130: 11.15am Petone to Naenae is cancelled"
+    },
+    {
+      "id": 1365393717859786752,
+      "created_at": "2021-02-26T20:10:04Z",
+      "text": "Bus 14: 9.00am Kilbirnie to Wilton"
+    },
+    {
+      "id": 1365394465016344581,
+      "created_at": "2021-02-26T20:13:02Z",
+      "text": "Bus 145: 9.33am Belmont to Lower Hutt"
+    },
+    {
+      "id": 1365395227473711107,
+      "created_at": "2021-02-26T20:16:04Z",
+      "text": "Bus 1: 9.00am Grenada Village to Island Bay is cancelled."
+    },
+    {
+      "id": 1365398861250879491,
+      "created_at": "2021-02-26T20:30:31Z",
+      "text": "Additional train seats and services for Hurricanes vs Blues - Saturday 27 February   https://t.co/dpG03YNF2V"
+    },
+    {
+      "id": 1365399246954897411,
+      "created_at": "2021-02-26T20:32:03Z",
+      "text": "Bus 145: 10.09am Lower Hutt to Belmont is cancelled"
+    },
+    {
+      "id": 1365402270238576640,
+      "created_at": "2021-02-26T20:44:03Z",
+      "text": "Bus 145: 9.33am Belmont to Lower Hutt is cancelled."
+    },
+    {
+      "id": 1365409566284939266,
+      "created_at": "2021-02-26T21:13:03Z",
+      "text": "Bus 145: 10.33am Belmont to Lower Hutt is cancelled"
+    },
+    {
+      "id": 1365412838504681475,
+      "created_at": "2021-02-26T21:26:03Z",
+      "text": "Bus 130: 12.00pm Naenae to Petone is cancelled"
+    },
+    {
+      "id": 1365418879225196546,
+      "created_at": "2021-02-26T21:50:03Z",
+      "text": "Bus 24: 9.45am Johnsonville to Miramar is cancelled"
+    },
+    {
+      "id": 1365433472634920962,
+      "created_at": "2021-02-26T22:48:03Z",
+      "text": "Bus 130: 12:00pm Naenae Station to Petone is cancelled"
+    },
+    {
+      "id": 1365468707636436994,
+      "created_at": "2021-02-27T01:08:03Z",
+      "text": "Bus 150: Bus 150: 2:35pm from Kelson to Petone Station is cancelled."
+    },
+    {
+      "id": 1365472229257932806,
+      "created_at": "2021-02-27T01:22:03Z",
+      "text": "Bus 150: Bus 150: 3.31pm from Petone Station to Kelson is cancelled."
+    },
+    {
+      "id": 1365472734176632836,
+      "created_at": "2021-02-27T01:24:03Z",
+      "text": "Bus 130: Bus 130: 3:30pm from Naenae Station to Petone Station is cancelled."
+    },
+    {
+      "id": 1365473235844820993,
+      "created_at": "2021-02-27T01:26:03Z",
+      "text": "Bus 130: Bus 130: 4:15pm from Petone Station to Naenae Station is cancelled."
+    },
+    {
+      "id": 1365476521930944515,
+      "created_at": "2021-02-27T01:39:06Z",
+      "text": "Lower Hutt: Queens Drive buses detour due to roadworks - 7pm to 5:30am, Thursday 4 to Friday 5 March https://t.co/QenK6OAnsh"
+    },
+    {
+      "id": 1365478772950986752,
+      "created_at": "2021-02-27T01:48:03Z",
+      "text": "Bus 150: Bus 150: 4:35pm from Kelson to Petone Station is cancelled."
+    },
+    {
+      "id": 1365488339973926917,
+      "created_at": "2021-02-27T02:26:04Z",
+      "text": "Bus 110: Bus 110: 5:05pm from Emerald Hill to Petone Station is cancelled."
+    },
+    {
+      "id": 1365488840442437635,
+      "created_at": "2021-02-27T02:28:03Z",
+      "text": "Bus 120: Bus 120: 5.58pm from Lower Hutt to Stokes Valley Terminus is cancelled."
+    },
+    {
+      "id": 1365490100923109378,
+      "created_at": "2021-02-27T02:33:04Z",
+      "text": "Bus 3: Bus 3: 3:30pm from Wellington Station to Tirangi Rd is cancelled."
+    },
+    {
+      "id": 1365502680529997825,
+      "created_at": "2021-02-27T03:23:03Z",
+      "text": "Bus 115: Bus 115: 6:10pm from Upper Hutt Station to Pinehaven to Upper Hutt Station is cancelled."
+    },
+    {
+      "id": 1365505449139732480,
+      "created_at": "2021-02-27T03:34:03Z",
+      "text": "Bus 110: Bus 110: 6:10pm from Petone Station to Emerald Hill is cancelled."
+    },
+    {
+      "id": 1365512001116536839,
+      "created_at": "2021-02-27T04:00:05Z",
+      "text": "Bus 120: Bus 6.58pm from Lower Hutt to Stokes Valley is cancelled."
+    },
+    {
+      "id": 1365512494832181251,
+      "created_at": "2021-02-27T04:02:03Z",
+      "text": "Bus 120: Bus 6.27pm from Stokes Valley Terminus to  Lower Hutt is cancelled."
+    },
+    {
+      "id": 1365592236029665282,
+      "created_at": "2021-02-27T09:18:55Z",
+      "text": "Covid-19 update: Alert Level 2. https://t.co/ximEAxd0ZH"
+    },
+    {
+      "id": 1365736721304883202,
+      "created_at": "2021-02-27T18:53:03Z",
+      "text": "Bus 20: 8.05am Kilbirnie to Courtenay Place is cancelled"
+    },
+    {
+      "id": 1365737981156290561,
+      "created_at": "2021-02-27T18:58:03Z",
+      "text": "Bus 20: 8.30am Courtenay Place to Kilbirnie is cancelled"
+    },
+    {
+      "id": 1365747795978686464,
+      "created_at": "2021-02-27T19:37:03Z",
+      "text": "Bus 160: 8.23am Wainuiomata to Lower Hutt is cancelled"
+    },
+    {
+      "id": 1365762900493672449,
+      "created_at": "2021-02-27T20:37:04Z",
+      "text": "Bus 2: 9.49am Miramar to Karori is cancelled"
     }
   ]
 }

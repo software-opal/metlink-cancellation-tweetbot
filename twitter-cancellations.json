@@ -2468,7 +2468,7 @@
     {
       "BusCancelled": {
         "route": "37",
-        "origin": "Karori ",
+        "origin": "Karori",
         "destination": "Brandon Street",
         "raw_time": "7:50 am",
         "tweet_time": "2021-02-24T18:05:03Z",
@@ -2935,6 +2935,236 @@
         "raw_time": "6:35 pm",
         "tweet_time": "2021-02-26T05:50:05Z",
         "time": "2021-02-26T18:35:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "130",
+        "origin": "Naenae",
+        "destination": "Petone",
+        "raw_time": "8:30 am",
+        "tweet_time": "2021-02-26T19:38:02Z",
+        "time": "2021-02-27T08:30:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "130",
+        "origin": "Petone",
+        "destination": "Naenae",
+        "raw_time": "11:15 am",
+        "tweet_time": "2021-02-26T19:42:03Z",
+        "time": "2021-02-27T11:15:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "1",
+        "origin": "Grenada Village",
+        "destination": "Island Bay",
+        "raw_time": "9:00 am",
+        "tweet_time": "2021-02-26T20:16:04Z",
+        "time": "2021-02-27T09:00:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "145",
+        "origin": "Lower Hutt",
+        "destination": "Belmont",
+        "raw_time": "10:09 am",
+        "tweet_time": "2021-02-26T20:32:03Z",
+        "time": "2021-02-27T10:09:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "145",
+        "origin": "Belmont",
+        "destination": "Lower Hutt",
+        "raw_time": "9:33 am",
+        "tweet_time": "2021-02-26T20:44:03Z",
+        "time": "2021-02-27T09:33:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "145",
+        "origin": "Belmont",
+        "destination": "Lower Hutt",
+        "raw_time": "10:33 am",
+        "tweet_time": "2021-02-26T21:13:03Z",
+        "time": "2021-02-27T10:33:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "130",
+        "origin": "Naenae",
+        "destination": "Petone",
+        "raw_time": "12:00 pm",
+        "tweet_time": "2021-02-26T21:26:03Z",
+        "time": "2021-02-27T12:00:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "24",
+        "origin": "Johnsonville",
+        "destination": "Miramar",
+        "raw_time": "9:45 am",
+        "tweet_time": "2021-02-26T21:50:03Z",
+        "time": "2021-02-27T09:45:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "130",
+        "origin": "Naenae Station",
+        "destination": "Petone",
+        "raw_time": "12:00 pm",
+        "tweet_time": "2021-02-26T22:48:03Z",
+        "time": "2021-02-27T12:00:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "150",
+        "origin": "Kelson",
+        "destination": "Petone Station",
+        "raw_time": "2:35 pm",
+        "tweet_time": "2021-02-27T01:08:03Z",
+        "time": "2021-02-27T14:35:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "150",
+        "origin": "Petone Station",
+        "destination": "Kelson",
+        "raw_time": "3:31 pm",
+        "tweet_time": "2021-02-27T01:22:03Z",
+        "time": "2021-02-27T15:31:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "130",
+        "origin": "Naenae Station",
+        "destination": "Petone Station",
+        "raw_time": "3:30 pm",
+        "tweet_time": "2021-02-27T01:24:03Z",
+        "time": "2021-02-27T15:30:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "130",
+        "origin": "Petone Station",
+        "destination": "Naenae Station",
+        "raw_time": "4:15 pm",
+        "tweet_time": "2021-02-27T01:26:03Z",
+        "time": "2021-02-27T16:15:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "150",
+        "origin": "Kelson",
+        "destination": "Petone Station",
+        "raw_time": "4:35 pm",
+        "tweet_time": "2021-02-27T01:48:03Z",
+        "time": "2021-02-27T16:35:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "110",
+        "origin": "Emerald Hill",
+        "destination": "Petone Station",
+        "raw_time": "5:05 pm",
+        "tweet_time": "2021-02-27T02:26:04Z",
+        "time": "2021-02-27T17:05:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "120",
+        "origin": "Lower Hutt",
+        "destination": "Stokes Valley Terminus",
+        "raw_time": "5:58 pm",
+        "tweet_time": "2021-02-27T02:28:03Z",
+        "time": "2021-02-27T17:58:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "3",
+        "origin": "Wellington Station",
+        "destination": "Tirangi Rd",
+        "raw_time": "3:30 pm",
+        "tweet_time": "2021-02-27T02:33:04Z",
+        "time": "2021-02-27T15:30:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "115",
+        "origin": "Upper Hutt Station",
+        "destination": "Pinehaven to Upper Hutt Station",
+        "raw_time": "6:10 pm",
+        "tweet_time": "2021-02-27T03:23:03Z",
+        "time": "2021-02-27T18:10:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "110",
+        "origin": "Petone Station",
+        "destination": "Emerald Hill",
+        "raw_time": "6:10 pm",
+        "tweet_time": "2021-02-27T03:34:03Z",
+        "time": "2021-02-27T18:10:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "20",
+        "origin": "Kilbirnie",
+        "destination": "Courtenay Place",
+        "raw_time": "8:05 am",
+        "tweet_time": "2021-02-27T18:53:03Z",
+        "time": "2021-02-28T08:05:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "20",
+        "origin": "Courtenay Place",
+        "destination": "Kilbirnie",
+        "raw_time": "8:30 am",
+        "tweet_time": "2021-02-27T18:58:03Z",
+        "time": "2021-02-28T08:30:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "160",
+        "origin": "Wainuiomata",
+        "destination": "Lower Hutt",
+        "raw_time": "8:23 am",
+        "tweet_time": "2021-02-27T19:37:03Z",
+        "time": "2021-02-28T08:23:00+13:00"
+      }
+    },
+    {
+      "BusCancelled": {
+        "route": "2",
+        "origin": "Miramar",
+        "destination": "Karori",
+        "raw_time": "9:49 am",
+        "tweet_time": "2021-02-27T20:37:04Z",
+        "time": "2021-02-28T09:49:00+13:00"
       }
     }
   ],
@@ -5758,7 +5988,7 @@
     {
       "BusCancelled": {
         "route": "3",
-        "origin": "Wellington Station ",
+        "origin": "Wellington Station",
         "destination": "Lyall Bay",
         "raw_time": "12:45 pm",
         "tweet_time": "2021-02-05T23:58:04Z",

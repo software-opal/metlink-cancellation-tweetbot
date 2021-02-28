@@ -121,10 +121,9 @@ pub async fn main() -> Result<()> {
 
     if !broken.is_empty() {
         panic!(
-            "Unable to parse: {:#?}\n Total of {} tweets failed to parse, {} were successfully parsed",
+            "Unable to parse: {:#?}\n Total of {} tweets failed to parse",
             broken,
-            broken.len(),
-            cancellations.len()
+            broken.len()
         )
     }
 

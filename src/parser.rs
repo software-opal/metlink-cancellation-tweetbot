@@ -9,7 +9,7 @@ use std::{collections::HashSet, ops::Sub};
 // https://english.stackexchange.com/questions/35315/what-is-the-proper-name-for-am-and-pm#35317
 const TIME_RE: &str = r"(?P<hour>[0-9]{1,2})(?:[.:](?P<minute>[0-9]{2}))?(?P<period>am|pm|m|)";
 const BUS_NUM_RE: &str = r"Bu[sa] ?(?P<bus_num>[0-9ex]+)";
-const BUS_DEST_RE: &str = r"(?:from )?(?P<origin>.*?) (?:to|tp|-) (?P<destination>.*?)";
+const BUS_DEST_RE: &str = r"(?:from +)?(?P<origin>.*?) +(?:to|tp|-) +(?P<destination>.*?)";
 const TRAIN_LINE_NAMES: [&str; 5] = ["WRL", "KPL", "HVL", "JVL", "MEL"];
 
 lazy_static! {
@@ -20,7 +20,7 @@ lazy_static! {
     ))
     .unwrap();
     static ref BUS_REINSTATED_RE: Regex = Regex::new(&format!(
-        "{0}: *{1} {2} +(?:is REINSTATED|is REINSTAED|is reinstated|has been REINSTATED|has been reinstated and will now run|t?hat was(?: previously)? cancelled will now run|will now run)",
+        "{0}: *{1} {2} +(?:is REINSTATED|is REINSTAED|is reinstated|has been REINSTATED|has been REINSTAED|has been reinstated and will now run|t?hat was(?: previously)? cancelled will now run|will now run)",
         BUS_NUM_RE, TIME_RE, BUS_DEST_RE
     ))
     .unwrap();
@@ -351,17 +351,17 @@ lazy_static! {
             1354966526365892612,
             1356690879805681664,
             1356836623581806593,
-            1357189987502944257,
+            1357189987502944257,1365177291186204675, 
             1357200754935758849,
             1358956553324228610,
             1360050266813329410,
-            1360053285831364608,
+            1360053285831364608,1365393717859786752,1362453135260672002,
             1360870398640807937,
             1362241741579898883,
             1362497545927159809,
             1363612979686645761,
             1363667353708359686,
-            1364304051546939396,
+            1364304051546939396,1365394465016344581,
             1365055494612779015,
         ]);
         h
