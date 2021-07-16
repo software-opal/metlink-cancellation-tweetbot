@@ -1,9 +1,9 @@
 use std::io;
 use std::path::{Path, PathBuf};
-use std::time::SystemTime;
+use std::time::{SystemTime};
 
 use reqwest::header::{self, ETAG};
-use time::OffsetDateTime;
+use time::{Duration, OffsetDateTime};
 use tokio::fs::File;
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 use tokio::task::spawn_blocking;
@@ -38,7 +38,7 @@ async fn load_gtfs_etag(cache_dir: &Path) -> Result<Option<Vec<u8>>> {
     }
 }
 
-async fn load_gtfs_mod_date(cache_dir: &Path) -> Result<Option<String>> {
+async fn load_gtfs_mod_date(cache_dir: &Path) -> Result<Option<OffsetDateTime>> {
     let zip_file = get_gtfs_zip_file(cache_dir);
     match File::open(zip_file).await {
         Ok(f) => {
@@ -48,7 +48,7 @@ async fn load_gtfs_mod_date(cache_dir: &Path) -> Result<Option<String>> {
                     Ok(duration) => {
                         let datetime =
                             OffsetDateTime::from_unix_timestamp(duration.as_secs() as i64);
-                        Ok(Some(datetime.format("%a, %d %b %Y %H:%M:%S GMT")))
+                        Ok(Some(datetime))
                     }
                     Err(_) => Ok(None),
                 },
@@ -70,13 +70,19 @@ async fn load_gtfs_from_(cache_dir: &Path) -> Result<GtfsData> {
     result
 }
 
+const IF_MODIFIED_SINCE_DATE_FORMAT: &str = "%a, %d %b %Y %H:%M:%S GMT";
+
 pub async fn load_gtfs(cache_dir: &Path, client: &reqwest::Client) -> Result<GtfsData> {
     let mut req_builder = client.get(METLINK_GTFS_URL);
     if let Some(etag) = load_gtfs_etag(cache_dir).await? {
         req_builder = req_builder.header(header::IF_NONE_MATCH, etag)
     }
     if let Some(mod_date) = load_gtfs_mod_date(cache_dir).await? {
-        req_builder = req_builder.header("If-Modified-Since", mod_date)
+        let age = OffsetDateTime::now_utc() - mod_date;
+        if age < Duration::days(1) {
+         return load_gtfs_from_(cache_dir).await;
+        }
+        req_builder = req_builder.header("If-Modified-Since", mod_date.format(IF_MODIFIED_SINCE_DATE_FORMAT))
     }
     let mut response = req_builder.send().await?.error_for_status()?;
 
@@ -89,7 +95,7 @@ pub async fn load_gtfs(cache_dir: &Path, client: &reqwest::Client) -> Result<Gtf
             writer.flush().await?;
             if let Some(value) = response.headers().get(ETAG) {
                 let mut writer = File::create(get_gtfs_etag_file(cache_dir)).await?;
-                writer.write_all(value.as_bytes());
+                writer.write_all(value.as_bytes()).await?;
                 writer.flush().await?;
             }
             load_gtfs_from_(cache_dir).await
