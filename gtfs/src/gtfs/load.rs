@@ -1,6 +1,6 @@
 use std::io;
 use std::path::{Path, PathBuf};
-use std::time::{SystemTime};
+use std::time::SystemTime;
 
 use reqwest::header::{self, ETAG};
 use time::{Duration, OffsetDateTime};
@@ -80,9 +80,12 @@ pub async fn load_gtfs(cache_dir: &Path, client: &reqwest::Client) -> Result<Gtf
     if let Some(mod_date) = load_gtfs_mod_date(cache_dir).await? {
         let age = OffsetDateTime::now_utc() - mod_date;
         if age < Duration::days(1) {
-         return load_gtfs_from_(cache_dir).await;
+            return load_gtfs_from_(cache_dir).await;
         }
-        req_builder = req_builder.header("If-Modified-Since", mod_date.format(IF_MODIFIED_SINCE_DATE_FORMAT))
+        req_builder = req_builder.header(
+            "If-Modified-Since",
+            mod_date.format(IF_MODIFIED_SINCE_DATE_FORMAT),
+        )
     }
     let mut response = req_builder.send().await?.error_for_status()?;
 

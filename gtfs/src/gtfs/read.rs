@@ -2,6 +2,7 @@ use std::fs::File;
 use std::io;
 use std::path::Path;
 
+use log::info;
 use serde::de::DeserializeOwned;
 use zip::ZipArchive;
 
@@ -13,6 +14,7 @@ where
     T: DeserializeOwned,
     R: io::Read + io::Seek,
 {
+    info!("Loading {}", filename);
     let r = archive
         .by_name(filename)
         .map_err(|err| Error::InvalidGtfsFile(filename.to_string(), err))?;
@@ -21,13 +23,17 @@ where
     for record in csv::Reader::from_reader(r).deserialize() {
         output.push(record?);
     }
+    info!("Loaded {} entries from {}", output.len(), filename);
     Ok(output)
 }
 
 pub fn load_gtfs_zip(zip_file: &Path) -> Result<GtfsData> {
     let mut archive = ZipArchive::new(File::open(zip_file)?)?;
 
-    log::info!("Zip file contains these files: {:?}", archive.file_names().collect::<Vec<_>>());
+    log::info!(
+        "Zip file contains these files: {:?}",
+        archive.file_names().collect::<Vec<_>>()
+    );
 
     Ok(GtfsData {
         agency: load_csv(&mut archive, "agency.txt")?,
@@ -38,7 +44,8 @@ pub fn load_gtfs_zip(zip_file: &Path) -> Result<GtfsData> {
         stop_pattern_trip: load_csv(&mut archive, "stop_pattern_trips.txt")?,
         stop_pattern: load_csv(&mut archive, "stop_patterns.txt")?,
         stop: load_csv(&mut archive, "stops.txt")?,
-        stop_times: load_csv(&mut archive, "stop_times.txt")?,
+        stop_time: load_csv(&mut archive, "stop_times.txt")?,
+        trip: load_csv(&mut archive, "trips.txt")?,
     })
     // "stop_times.txt" => {}
     // "transfers.txt" => {}

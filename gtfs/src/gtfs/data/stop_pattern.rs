@@ -1,6 +1,5 @@
-use super::utils::{ deserialize_num_bool};
+use super::utils::deserialize_num_bool;
 use serde::{Deserialize, Serialize};
-
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct StopPattern {

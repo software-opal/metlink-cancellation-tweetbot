@@ -368,6 +368,7 @@ dependencies = [
  "log",
  "reqwest",
  "serde",
+ "serde_json",
  "thiserror",
  "time 0.2.27",
  "tokio",

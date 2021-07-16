@@ -1,8 +1,8 @@
-use super::time::Time;
-use super::utils::{deserialize_date, deserialize_num_bool};
+use super::time::{deserialize_time_struct, Time};
+use super::utils::deserialize_num_bool;
 use serde::{Deserialize, Deserializer, Serialize};
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Serialize)]
 pub enum StopLocationType {
     /// A location where passengers board or disembark from a transit vehicle. Is called a platform when defined within a parent_station.
     StopOrPlatform,
@@ -36,18 +36,18 @@ where
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Stop {
-    stop_id: String,
-    stop_code: String,
-    stop_name: String,
-    stop_desc: String,
-    stop_lat: f64,
-    stop_lon: f64,
-    zone_id: String,
-    stop_url: String,
+    pub stop_id: String,
+    pub stop_code: String,
+    pub stop_name: String,
+    pub stop_desc: String,
+    pub stop_lat: f64,
+    pub stop_lon: f64,
+    pub zone_id: String,
+    pub stop_url: String,
     #[serde(deserialize_with = "deserialize_stop_location_type")]
-    location_type: StopLocationType,
-    parent_station: String,
-    stop_timezone: String,
+    pub location_type: StopLocationType,
+    pub parent_station: String,
+    pub stop_timezone: String,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -58,18 +58,20 @@ pub enum PickupDropoffType {
     CoordinateDriver,
 }
 
-pub fn deserialize_pickup_dropoff_type<'de, D>(deserializer: D) -> Result<Time, D::Error>
+pub fn deserialize_pickup_dropoff_type<'de, D>(
+    deserializer: D,
+) -> Result<PickupDropoffType, D::Error>
 where
     D: Deserializer<'de>,
 {
     let s: Option<u8> = Deserialize::deserialize(deserializer)?;
     match s {
-        0 => Ok(PickupDropoffType::Regular),
-        1 => Ok(PickupDropoffType::NotAvaliable),
-        2 => Ok(PickupDropoffType::PhoneAgency),
-        3 => Ok(PickupDropoffType::CoordinateDriver),
+        Some(0) => Ok(PickupDropoffType::Regular),
+        Some(1) => Ok(PickupDropoffType::NotAvaliable),
+        Some(2) => Ok(PickupDropoffType::PhoneAgency),
+        Some(3) => Ok(PickupDropoffType::CoordinateDriver),
         _ => Err(serde::de::Error::custom(format!(
-            "Invalid pickup/dropoff type: {}",
+            "Invalid pickup/dropoff type: {:?}",
             s
         ))),
     }
@@ -78,7 +80,9 @@ where
 #[derive(Debug, Deserialize, Serialize)]
 pub struct StopTime {
     trip_id: String,
+    #[serde(deserialize_with = "deserialize_time_struct")]
     arrival_time: Time,
+    #[serde(deserialize_with = "deserialize_time_struct")]
     departure_time: Time,
     stop_id: String,
     stop_sequence: u16,
@@ -86,7 +90,7 @@ pub struct StopTime {
     pickup_type: PickupDropoffType,
     #[serde(deserialize_with = "deserialize_pickup_dropoff_type")]
     drop_off_type: PickupDropoffType,
-    shape_dist_traveled: f64,
+    shape_dist_traveled: Option<f64>,
     stop_headsign: String,
     #[serde(deserialize_with = "deserialize_num_bool")]
     timepoint: bool,
