@@ -25,18 +25,18 @@ pub enum RouteType {
 }
 
 impl RouteType {
-    fn pretty_name(&self) -> &'static str {
+    pub fn pretty_name(&self) -> &'static str {
         match self {
-            Tram => "Tram",
-            Subway => "Subway",
-            Rail => "Rail",
-            Bus => "Bus",
-            Ferry => "Ferry",
-            CableTram => "Cable Tram",
-            AerialLift => "Aerial Lift",
-            Funicular => "Funicular",
-            Trolleybus => "Trolleybus",
-            Monorail => "Monorail",
+            RouteType::Tram => "Tram",
+            RouteType::Subway => "Subway",
+            RouteType::Rail => "Rail",
+            RouteType::Bus => "Bus",
+            RouteType::Ferry => "Ferry",
+            RouteType::CableTram => "Cable Tram",
+            RouteType::AerialLift => "Aerial Lift",
+            RouteType::Funicular => "Funicular",
+            RouteType::Trolleybus => "Trolleybus",
+            RouteType::Monorail => "Monorail",
         }
     }
 }

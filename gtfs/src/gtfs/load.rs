@@ -9,8 +9,8 @@ use tokio::io::{AsyncReadExt, AsyncWriteExt};
 use tokio::task::spawn_blocking;
 
 use super::data::GtfsData;
-use super::error::Result;
 use super::read::load_gtfs_zip;
+use crate::error::Result;
 
 const METLINK_GTFS_URL: &str = "https://static.opendata.metlink.org.nz/v1/gtfs/full.zip";
 const GTFS_ZIP_FILE: &str = "metlink-gtfs.zip";

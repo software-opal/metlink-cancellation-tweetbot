@@ -1,93 +1,47 @@
-use std::{fs::File, path::PathBuf};
+use std::{io::Read, path::PathBuf};
 
-use reqwest::Client;
-use tokio::fs::create_dir_all;
-
-use crate::gtfs::data::GtfsData;
+use gtfs::load_gtfs;
+use reqwest::{
+    header::{HeaderMap, HeaderValue},
+    Client,
+};
+use tokio::{
+    fs::{create_dir_all, File},
+    io::AsyncReadExt,
+};
 
 pub mod db;
 pub mod error;
 pub mod gtfs;
+pub mod realtime;
 
 static APP_USER_AGENT: &str = concat!(env!("CARGO_PKG_NAME"), "/", env!("CARGO_PKG_VERSION"),);
 
 #[tokio::main]
-async fn main() {
+async fn main() -> self::error::Result<()> {
     env_logger::builder()
         .filter_level(log::LevelFilter::Debug)
         .init();
 
+    let api_key = {
+        let mut buf = String::new();
+        File::open("./metlink_api_key.txt")
+            .await?
+            .read_to_string(&mut buf)
+            .await?;
+        buf.trim().to_owned()
+    };
+    let mut headers = HeaderMap::new();
+    headers.insert("X-Api-Key", HeaderValue::from_str(&api_key).unwrap());
+
     let client = Client::builder()
         .user_agent(APP_USER_AGENT)
-        .build()
-        .unwrap();
+        .default_headers(headers)
+        .build()?;
     let cache_dir = PathBuf::from("./.cache");
-    create_dir_all(&cache_dir).await.unwrap();
-    let c = gtfs::load::load_gtfs(&cache_dir, &client).await.unwrap();
+    create_dir_all(&cache_dir).await?;
 
-    let GtfsData {
-        agency,
-        calendar,
-        calendar_date,
-        feed_info,
-        route,
-        stop_pattern,
-        stop_pattern_trip,
-        stop,
-        stop_time,
-        trip,
-    } = c;
+    load_gtfs(&cache_dir, &client).await?;
 
-    println!("agency: {:#?}", agency.get(0));
-    println!("calendar: {:#?}", calendar.get(0));
-    println!("calendar_date: {:#?}", calendar_date.get(0));
-    println!("feed_info: {:#?}", feed_info.get(0));
-    println!("route: {:#?}", route.get(0));
-    println!("stop_pattern: {:#?}", stop_pattern.get(0));
-    println!("stop_pattern_trip: {:#?}", stop_pattern_trip.get(0));
-    println!("stop: {:#?}", stop.get(0));
-    println!("stop_time: {:#?}", stop_time.get(0));
-    println!("trip: {:#?}", trip.get(0));
-
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("agency.json")).unwrap(),
-        &agency,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("calendar.json")).unwrap(),
-        &calendar,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("calendar_date.json")).unwrap(),
-        &calendar_date,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("feed_info.json")).unwrap(),
-        &feed_info,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(File::create(cache_dir.join("route.json")).unwrap(), &route)
-        .unwrap();
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("stop_pattern.json")).unwrap(),
-        &stop_pattern,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("stop_pattern_trip.json")).unwrap(),
-        &stop_pattern_trip,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(File::create(cache_dir.join("stop.json")).unwrap(), &stop)
-        .unwrap();
-    serde_json::to_writer_pretty(
-        File::create(cache_dir.join("stop_time.json")).unwrap(),
-        &stop_time,
-    )
-    .unwrap();
-    serde_json::to_writer_pretty(File::create(cache_dir.join("trip.json")).unwrap(), &trip)
-        .unwrap();
+    Ok(())
 }

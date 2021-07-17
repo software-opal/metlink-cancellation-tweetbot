@@ -7,7 +7,7 @@ use serde::de::DeserializeOwned;
 use zip::ZipArchive;
 
 use super::data::GtfsData;
-use super::error::{Error, Result};
+use crate::error::{Error, Result};
 
 fn load_csv<'a, T, R>(archive: &mut ZipArchive<R>, filename: &str) -> Result<Vec<T>>
 where

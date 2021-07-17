@@ -7,7 +7,7 @@ use self::{
     stop_pattern::{StopPattern, StopPatternTrip},
     trip::Trip,
 };
-use serde::{Deserialize, Deserializer, Serialize};
+use serde::{Deserialize, Serialize};
 
 pub mod agency;
 pub mod calendar;

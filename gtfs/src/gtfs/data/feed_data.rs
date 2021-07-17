@@ -1,5 +1,5 @@
 use super::utils::deserialize_date;
-use serde::{Deserialize, Deserializer, Serialize};
+use serde::{Deserialize, Serialize};
 use time::Date;
 
 #[derive(Debug, Deserialize, Serialize)]
