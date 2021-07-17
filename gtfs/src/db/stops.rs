@@ -48,10 +48,10 @@ impl StopDb {
     }
 }
 
-impl From<&Vec<crate::gtfs::data::stop::Stop>> for StopDb {
-    fn from(parsed: &Vec<crate::gtfs::data::stop::Stop>) -> Self {
+impl From<&crate::gtfs::data::GtfsData> for StopDb {
+    fn from(parsed: &crate::gtfs::data::GtfsData) -> Self {
         Self {
-            stops: parsed
+            stops: parsed.stop
                 .iter()
                 .map(|stop| Stop::from(stop))
                 .map(|stop| (stop.id.clone(), stop))

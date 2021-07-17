@@ -44,10 +44,11 @@ impl RouteDb {
     }
 }
 
-impl From<&Vec<crate::gtfs::data::route::Route>> for RouteDb {
-    fn from(parsed: &Vec<crate::gtfs::data::route::Route>) -> Self {
+impl From<&crate::gtfs::data::GtfsData> for RouteDb {
+    fn from(parsed: &crate::gtfs::data::GtfsData) -> Self {
         Self {
             routes: parsed
+                .route
                 .iter()
                 .map(|route| Route::from(route))
                 .map(|route| (route.id.clone(), route))

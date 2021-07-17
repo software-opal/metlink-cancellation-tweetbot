@@ -41,8 +41,6 @@ pub fn load_gtfs_zip(zip_file: &Path) -> Result<GtfsData> {
         calendar_date: load_csv(&mut archive, "calendar_dates.txt")?,
         feed_info: load_csv(&mut archive, "feed_info.txt")?,
         route: load_csv(&mut archive, "routes.txt")?,
-        stop_pattern_trip: load_csv(&mut archive, "stop_pattern_trips.txt")?,
-        stop_pattern: load_csv(&mut archive, "stop_patterns.txt")?,
         stop: load_csv(&mut archive, "stops.txt")?,
         stop_time: load_csv(&mut archive, "stop_times.txt")?,
         trip: load_csv(&mut archive, "trips.txt")?,

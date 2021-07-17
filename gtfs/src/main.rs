@@ -1,6 +1,6 @@
-use std::{io::Read, path::PathBuf};
+use std::path::PathBuf;
 
-use gtfs::load_gtfs;
+use color_eyre::eyre::Result;
 use reqwest::{
     header::{HeaderMap, HeaderValue},
     Client,
@@ -10,15 +10,19 @@ use tokio::{
     io::AsyncReadExt,
 };
 
+use crate::realtime::load::load_service_alerts;
+
 pub mod db;
 pub mod error;
 pub mod gtfs;
 pub mod realtime;
+pub mod utils;
 
 static APP_USER_AGENT: &str = concat!(env!("CARGO_PKG_NAME"), "/", env!("CARGO_PKG_VERSION"),);
 
 #[tokio::main]
-async fn main() -> self::error::Result<()> {
+async fn main() -> Result<()> {
+    color_eyre::install()?;
     env_logger::builder()
         .filter_level(log::LevelFilter::Debug)
         .init();
@@ -41,7 +45,8 @@ async fn main() -> self::error::Result<()> {
     let cache_dir = PathBuf::from("./.cache");
     create_dir_all(&cache_dir).await?;
 
-    load_gtfs(&cache_dir, &client).await?;
+    let db = crate::gtfs::load_gtfs(&cache_dir, &client).await?;
+    load_service_alerts(&cache_dir, &client).await?;
 
     Ok(())
 }

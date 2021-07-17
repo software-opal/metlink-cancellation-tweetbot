@@ -14,7 +14,7 @@ pub enum TimeError {
     InvalidFormat,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Serialize)]
 pub struct Time {
     hour: u8,
     minute: u8,

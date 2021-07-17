@@ -50,7 +50,7 @@ pub struct Stop {
     pub stop_timezone: String,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Serialize)]
 pub enum PickupDropoffType {
     Regular,
     NotAvaliable,
@@ -79,19 +79,19 @@ where
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct StopTime {
-    trip_id: String,
+    pub trip_id: String,
     #[serde(deserialize_with = "deserialize_time_struct")]
-    arrival_time: Time,
+    pub arrival_time: Time,
     #[serde(deserialize_with = "deserialize_time_struct")]
-    departure_time: Time,
-    stop_id: String,
-    stop_sequence: u16,
+    pub departure_time: Time,
+    pub stop_id: String,
+    pub stop_sequence: u16,
     #[serde(deserialize_with = "deserialize_pickup_dropoff_type")]
-    pickup_type: PickupDropoffType,
+    pub pickup_type: PickupDropoffType,
     #[serde(deserialize_with = "deserialize_pickup_dropoff_type")]
-    drop_off_type: PickupDropoffType,
-    shape_dist_traveled: Option<f64>,
-    stop_headsign: String,
+    pub drop_off_type: PickupDropoffType,
+    pub shape_dist_traveled: Option<f64>,
+    pub stop_headsign: String,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    timepoint: bool,
+    pub timepoint: bool,
 }
