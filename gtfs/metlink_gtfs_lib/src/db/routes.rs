@@ -5,15 +5,15 @@ use crate::gtfs::data::route::RouteType;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Route {
-    id: String,
-    agency_id: String,
-    short_name: String,
-    long_name: String,
-    desc: String,
-    route_type: RouteType,
-    url: String,
-    color: String,
-    text_color: String,
+  pub  id: String,
+  pub  agency_id: String,
+  pub  short_name: String,
+  pub  long_name: String,
+  pub  desc: String,
+  pub  route_type: RouteType,
+  pub  url: String,
+  pub  color: String,
+  pub  text_color: String,
 }
 
 impl Route {}

@@ -4,6 +4,9 @@ use time::OffsetDateTime;
 use tokio::fs::File;
 
 
+pub const IF_MODIFIED_SINCE_DATE_FORMAT: &str = "%a, %d %b %Y %H:%M:%S GMT";
+
+
 pub async fn file_mod_time(file: &Path) -> crate::error::Result<Option<OffsetDateTime>> {
     match File::open(file).await {
         Ok(file) => {

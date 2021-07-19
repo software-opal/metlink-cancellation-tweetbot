@@ -13,7 +13,6 @@ pub mod calendar;
 pub mod feed_data;
 pub mod route;
 pub mod stop;
-pub mod time;
 pub mod trip;
 pub mod utils;
 

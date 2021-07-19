@@ -5,17 +5,17 @@ use crate::gtfs::data::stop::StopLocationType;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Stop {
-    id: String,
-    code: String,
-    name: String,
-    desc: String,
-    lat: f64,
-    lon: f64,
-    zone_id: String,
-    url: String,
-    location_type: StopLocationType,
-    parent_station: String,
-    timezone: String,
+  pub  id: String,
+  pub  code: String,
+  pub  name: String,
+  pub  desc: String,
+  pub  lat: f64,
+  pub  lon: f64,
+  pub  zone_id: String,
+  pub  url: String,
+  pub  location_type: StopLocationType,
+  pub  parent_station: String,
+  pub  timezone: String,
 }
 
 impl Stop {}

@@ -1,4 +1,4 @@
-use super::time::{deserialize_time_struct, Time};
+use crate::datatypes::time::{deserialize_time_struct, Time};
 use super::utils::deserialize_num_bool;
 use serde::{Deserialize, Deserializer, Serialize};
 

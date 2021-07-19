@@ -70,7 +70,7 @@ pub struct ServiceAlertEntity {
     pub timestamp: OffsetDateTime,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Serialize, PartialEq, Eq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ServiceAlertEffect {
     NoService,
@@ -85,7 +85,7 @@ pub enum ServiceAlertEffect {
     NoEffect,
     AccessibilityIssue,
 }
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Serialize, PartialEq, Eq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ServiceAlertCause {
     UnknownCause,
@@ -101,7 +101,7 @@ pub enum ServiceAlertCause {
     PoliceActivity,
     MedicalEmergency,
 }
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Clone, Copy, Debug, Deserialize, Serialize, PartialEq, Eq)]
 #[serde(rename_all = "SCREAMING_SNAKE_CASE")]
 pub enum ServiceAlertSeverity {
     UnknownSeverity,
@@ -131,8 +131,10 @@ impl ServiceAlert {
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct AlertTimeRange {
-    pub start: u64,
-    pub end: u64,
+    #[serde(with = "time::serde::timestamp")]
+    pub start: OffsetDateTime,
+    #[serde(with = "time::serde::timestamp")]
+    pub end: OffsetDateTime,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -180,19 +182,12 @@ pub struct TranslatedText {
 #[derive(Debug, Deserialize, Serialize)]
 #[serde(untagged)]
 pub enum AlertInformedEntity {
-    Route {
-        route_id: String,
-        route_type: Option<i32>,
-    },
-    Stop {
-        stop_id: String,
-    },
-    Trip {
-        trip: TripEntity,
-    },
+    Route { route_id: String, route_type: i32 },
+    Stop { stop_id: String },
+    Trip { trip: TripEntity },
 }
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct TripEntity {
-    trip_id: String,
+    pub trip_id: String,
 }

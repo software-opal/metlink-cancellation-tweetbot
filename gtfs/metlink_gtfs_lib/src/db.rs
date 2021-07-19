@@ -9,12 +9,14 @@ use crate::{error::Result, utils::file_mod_time};
 pub mod routes;
 pub mod stops;
 pub mod trips;
+pub mod services;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Database {
     pub routes: self::routes::RouteDb,
     pub stops: self::stops::StopDb,
     pub trips: self::trips::TripDb,
+    pub services: self::services::ServiceDb,
 }
 
 impl From<&crate::gtfs::data::GtfsData> for Database {
@@ -23,6 +25,7 @@ impl From<&crate::gtfs::data::GtfsData> for Database {
             routes: parsed.into(),
             stops: parsed.into(),
             trips: parsed.into(),
+            services: parsed.into(),
         }
     }
 }
@@ -36,13 +39,14 @@ pub async fn load_db_from_cache(cache_dir: &Path, allow_old: bool) -> Result<Opt
     if let Some(mod_time) = file_mod_time(&db_file).await? {
         let age = OffsetDateTime::now_utc() - mod_time;
         if allow_old || age < Duration::days(1) {
-            Ok(Some(
-                spawn_blocking(|| -> Result<Database> {
-                    Ok(serde_json::from_reader(std::fs::File::open(db_file)?)?)
-                })
-                .await
-                .unwrap()?,
-            ))
+            Ok(spawn_blocking(|| -> Result<Option<Database>> {
+                match serde_json::from_reader(std::fs::File::open(db_file)?) {
+                    Ok(db) => Ok(Some(db)),
+                    _ => Ok(None),
+                }
+            })
+            .await
+            .unwrap()?)
         } else {
             Ok(None)
         }

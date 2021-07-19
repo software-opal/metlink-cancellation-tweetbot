@@ -1,5 +1,6 @@
 use std::path::Path;
 
+use log::info;
 use serde::Serialize;
 
 use crate::db::{load_db_from_cache, save_db_to_cache};
@@ -18,9 +19,7 @@ where
     Ok(())
 }
 
-pub async fn write_gtfs_data_json(
-    cache_dir: &Path, c: &GtfsData) -> crate::error::Result<()>{
-
+pub async fn write_gtfs_data_json(cache_dir: &Path, c: &GtfsData) -> crate::error::Result<()> {
     let GtfsData {
         agency,
         calendar,
@@ -40,16 +39,7 @@ pub async fn write_gtfs_data_json(
     println!("stop_time: {:#?}", stop_time.get(0));
     println!("trip: {:#?}", trip.get(0));
 
-    let (
-        agency_r,
-        calendar_r,
-        calendar_date_r,
-        feed_info_r,
-        route_r,
-        stop_r,
-        stop_time_r,
-        trip_r,
-    ) = tokio::join!(
+    let (agency_r, calendar_r, calendar_date_r, feed_info_r, route_r, stop_r, stop_time_r, trip_r) = tokio::join!(
         write_json(cache_dir, "agency.json", &agency),
         write_json(cache_dir, "calendar.json", &calendar),
         write_json(cache_dir, "calendar_date.json", &calendar_date,),
@@ -75,13 +65,19 @@ pub async fn load_gtfs(
     cache_dir: &Path,
     client: &reqwest::Client,
 ) -> crate::error::Result<crate::db::Database> {
-
-    if let Some(db) = load_db_from_cache(cache_dir, false).await? {
-        Ok(db)
-    } else {
+    // info!("Trying to load database");
+    // if let Some(db) = load_db_from_cache(cache_dir, false).await? {
+    //     info!("Loaded database");
+    //     Ok(db)
+    // } else {
+        info!("Unable to load database, building new one");
         let c = self::load::load_gtfs(&cache_dir, &client).await?;
-        // write_gtfs_data_json(cache_dir, &c);
+        // write_gtfs_data_json(cache_dir, &c).await?;
+        info!("Converting to database");
         let db = (&c).into();
-        save_db_to_cache(cache_dir, db).await
-    }
+        info!("Saving database");
+        // let db = save_db_to_cache(cache_dir, db).await?;
+        info!("Finished saving database");
+        Ok(db)
+    // }
 }

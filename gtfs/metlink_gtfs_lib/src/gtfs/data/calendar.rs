@@ -4,25 +4,25 @@ use time::Date;
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Calendar {
-    service_id: String,
+    pub service_id: String,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    monday: bool,
+    pub monday: bool,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    tuesday: bool,
+    pub tuesday: bool,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    wednesday: bool,
+    pub wednesday: bool,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    thursday: bool,
+    pub thursday: bool,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    friday: bool,
+    pub friday: bool,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    saturday: bool,
+    pub saturday: bool,
     #[serde(deserialize_with = "deserialize_num_bool")]
-    sunday: bool,
+    pub sunday: bool,
     #[serde(deserialize_with = "deserialize_date")]
-    start_date: Date,
+    pub start_date: Date,
     #[serde(deserialize_with = "deserialize_date")]
-    end_date: Date,
+    pub end_date: Date,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -50,9 +50,9 @@ where
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct CalendarDate {
-    service_id: String,
+    pub service_id: String,
     #[serde(deserialize_with = "deserialize_date")]
-    date: Date,
+    pub date: Date,
     #[serde(deserialize_with = "deserialize_exception_type")]
-    exception_type: CalendarDateExceptionType,
+    pub exception_type: CalendarDateExceptionType,
 }
