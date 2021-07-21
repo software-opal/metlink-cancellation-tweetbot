@@ -1,4 +1,3 @@
-
 use std::path::PathBuf;
 
 use color_eyre::eyre::Result;
@@ -7,24 +6,29 @@ use tokio::{
     io::AsyncReadExt,
 };
 
-use metlink_gtfs_lib::{client::reqwest_client_with_api_key, realtime::{self, load::get_service_alerts_if_outdated}};
+use metlink_gtfs_lib::{
+    client::reqwest_client_with_api_key,
+    realtime::{
+        self,
+        service_alerts::ServiceAlertRealtimeApi,
+        trip_updates::TripUpdateRealtimeApi,
+        utils::{download_latest_if_needed, CachedRealtimeApi},
+        vehicle_positions::VehiclePositionsRealtimeApi,
+    },
+};
 
-
-pub async fn cron_service_alerts(api_key: String, cache_dir: PathBuf) -> Result<()> {
-    let mut interval = tokio::time::interval(realtime::load::MIN_FETCH_FREQUENCY);
+pub async fn cron_realtime_api<T: CachedRealtimeApi>(api: T) {
+    let mut interval = tokio::time::interval(api.min_fetch_frequency());
     interval.set_missed_tick_behavior(tokio::time::MissedTickBehavior::Delay);
-
-    let client = reqwest_client_with_api_key(&api_key)?;
 
     loop {
         interval.tick().await;
-        match get_service_alerts_if_outdated(&cache_dir, &client).await {
-            Ok(_) => log::info!("Service alerts updated."),
+        match download_latest_if_needed(&api).await {
+            Ok(_) => log::info!("Updated {}.", api.name()),
             Err(e) => log::error!("Service alerts update failed: {:?}", e),
         }
     }
 }
-
 
 #[tokio::main]
 async fn main() -> Result<()> {
@@ -44,8 +48,18 @@ async fn main() -> Result<()> {
     let cache_dir = PathBuf::from("./.cache");
     create_dir_all(&cache_dir).await?;
 
-   let (service_alerts, ) = tokio::try_join!(tokio::spawn(cron_service_alerts(api_key, cache_dir)))?;
-   service_alerts?;
+    let service_alert_api =
+        ServiceAlertRealtimeApi::new(&cache_dir, reqwest_client_with_api_key(&api_key)?);
+    let trip_update_api =
+        TripUpdateRealtimeApi::new(&cache_dir, reqwest_client_with_api_key(&api_key)?);
+    let vehicle_position_api =
+        VehiclePositionsRealtimeApi::new(&cache_dir, reqwest_client_with_api_key(&api_key)?);
+
+    tokio::try_join!(
+        tokio::spawn(cron_realtime_api(service_alert_api)),
+        tokio::spawn(cron_realtime_api(trip_update_api)),
+        tokio::spawn(cron_realtime_api(vehicle_position_api))
+    )?;
 
     Ok(())
 }
